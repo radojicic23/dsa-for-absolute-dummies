@@ -1,4 +1,18 @@
 /*
+  /$$$$$$                                                  
+ /$$__  $$                                                 
+| $$  \ $$  /$$$$$$   /$$$$$$  /$$$$$$  /$$   /$$  /$$$$$$$
+| $$$$$$$$ /$$__  $$ /$$__  $$|____  $$| $$  | $$ /$$_____/
+| $$__  $$| $$  \__/| $$  \__/ /$$$$$$$| $$  | $$|  $$$$$$ 
+| $$  | $$| $$      | $$      /$$__  $$| $$  | $$ \____  $$
+| $$  | $$| $$      | $$     |  $$$$$$$|  $$$$$$$ /$$$$$$$/
+|__/  |__/|__/      |__/      \_______/ \____  $$|_______/ 
+                                        /$$  | $$          
+                                       |  $$$$$$/          
+                                        \______/ 
+*/
+
+/*
 - An array is a data structure that stores a collection of elements of the same data type in a contiguous block of memory. 
   It provides a way to store and access a group of related values using a single variable name.
 

@@ -1,4 +1,17 @@
 /*
+ /$$$$$$$  /$$                                                /$$$$$$                                          /$$      
+| $$__  $$|__/                                               /$$__  $$                                        | $$      
+| $$  \ $$ /$$ /$$$$$$$   /$$$$$$   /$$$$$$  /$$   /$$      | $$  \__/  /$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$$| $$$$$$$ 
+| $$$$$$$ | $$| $$__  $$ |____  $$ /$$__  $$| $$  | $$      |  $$$$$$  /$$__  $$ |____  $$ /$$__  $$ /$$_____/| $$__  $$
+| $$__  $$| $$| $$  \ $$  /$$$$$$$| $$  \__/| $$  | $$       \____  $$| $$$$$$$$  /$$$$$$$| $$  \__/| $$      | $$  \ $$
+| $$  \ $$| $$| $$  | $$ /$$__  $$| $$      | $$  | $$       /$$  \ $$| $$_____/ /$$__  $$| $$      | $$      | $$  | $$
+| $$$$$$$/| $$| $$  | $$|  $$$$$$$| $$      |  $$$$$$$      |  $$$$$$/|  $$$$$$$|  $$$$$$$| $$      |  $$$$$$$| $$  | $$
+|_______/ |__/|__/  |__/ \_______/|__/       \____  $$       \______/  \_______/ \_______/|__/       \_______/|__/  |__/
+                                             /$$  | $$                                                                  
+                                            |  $$$$$$/                                                                  
+                                             \______/                                                                   
+*/
+/*
 - Binary search is a searching algorithm used to search for an element in a sorted array or list by repeatedly dividing the search interval in half. 
   The search begins by comparing the target value to the middle element of the sorted array. 
   If the target value is equal to the middle element, the search is complete. 
@@ -6,7 +19,6 @@
   If the target value is greater than the middle element, the search continues on the upper half of the array. 
   This process continues until the target value is found or the search interval is empty.
 */
-
 // Implementation in C++:
 
 #include <iostream>
@@ -34,7 +46,6 @@ int binarySearch(vector<int> arr, int leftPointer, int rightPointer, int target)
     // if target value is not found then simple return -1
     return -1;
 };
-
 
 int main() {
     vector<int> arr = {1, 2, 4, 10, 20, 30, 100};
