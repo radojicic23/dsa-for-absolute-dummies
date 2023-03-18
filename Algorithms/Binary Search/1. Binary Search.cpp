@@ -23,7 +23,7 @@
   which checks all elements one by one. However, for binary search to work, the array or list must be sorted.
   Binary search can be implemented using a while loop, recursion, or a combination of both. 
 */
-// Implementation in C++:
+//- Implementation in C++:
 
 #include <iostream>
 #include <vector>
