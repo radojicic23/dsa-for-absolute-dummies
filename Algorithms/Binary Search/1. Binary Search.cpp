@@ -82,3 +82,11 @@ int main() {
 - Overall, binary search algorithm is most useful when we are dealing with sorted arrays or lists, 
   monotonic properties, and when we need to find the maximum or minimum value in a function.
 */
+
+/*
+- More Examples on LeetCode: 
+  1. Binary Search ==> https://leetcode.com/problems/binary-search/
+  2. Find Minimum in Rotated Sorted Array ==> https://leetcode.com/problems/binary-search/
+  3. Find Peak Element ==> https://leetcode.com/problems/find-peak-element/
+  4. Find Minimum in Rotated Sorted Array II ==> https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/
+*/
