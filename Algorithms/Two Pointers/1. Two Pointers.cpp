@@ -26,3 +26,41 @@
   However, it's important to note that the time and space complexity of the Two Pointers algorithm can be affected by the specifics of the problem being solved. 
   For example, if the input data is not already sorted, sorting it can take O(nlogn) time, which would increase the overall time complexity of the algorithm.
 */
+
+/*
+- Implementation in C++:
+  In this example, we're trying to find a pair of numbers in the nums vector that add up to the target value.
+*/
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+vector<int> twoPointers(vector<int>& nums, int target) {
+    int left = 0;
+    int right = nums.size() - 1;
+    while (left < right) {
+        int sum = nums[left] + nums[right];
+        if (sum == target) {
+            return {left, right};
+        } else if (sum < target) {
+            left++;
+        } else {
+            right--;
+        }
+    }
+    // return this if no such pair exists
+    return {-1, -1};
+};
+
+int main() {
+    vector <int> nums = {1, 3, 4, 5, 10, 20};
+    int target = 24;
+    vector<int> ans = twoPointers(nums, target);
+    if (ans[0] == -1 && ans[1] == -1) {
+        cout << "No such pair exist." << endl;
+    } else {
+        cout << "Pair found at indices " << ans[0] << " and " << ans[1] << "." << endl;
+    }
+    return 0;
+};
