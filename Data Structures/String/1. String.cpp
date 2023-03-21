@@ -39,3 +39,18 @@ int main() {
   cout << "Hello, " << fullName << "!" << endl;
   return 0; 
 }
+
+/*
+- C++ provides a number of built-in functions for working with strings. Here are some of the most commonly used ones:
+
+  1. length(): This function returns the length of the string, i.e., the number of characters in the string.
+  2. substr(): This function returns a substring of the original string, starting from a given position and with a given length.
+  3. find(): This function searches the string for a given substring and returns the index of the first occurrence.
+  4. replace(): This function replaces a portion of the string with another string.
+  5. at(): This function returns the character at a given index in the string.
+  6. append(): This function appends another string to the end of the current string.
+  7. c_str(): This function returns a const char* pointer to the underlying character array of the string.
+
+  These are just a few examples of the many functions available for working with strings in C++. 
+  For a full list of functions, see the C++ documentation.
+*/
