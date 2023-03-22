@@ -28,3 +28,33 @@
   - When you want to retrieve a value from the HashMap, the hash function is applied to the key to determine the bucket where it should be located. 
     Then, the linked list in that bucket is traversed until the node with the matching key is found, and the corresponding value is returned.
 */
+
+#include <iostream>
+#include <unordered_map>
+using namespace std;
+
+int main() {
+    // create HashMap that maps strings to integers
+    unordered_map<string, int> myMap;
+
+    // add some key-value pairs
+    myMap["apple"] = 5;
+    myMap["banana"] = 10;
+    myMap["orange"] = 7;
+    myMap["pear"] = 3;
+
+    // retrieve the value associated with a key
+    cout << "The value of 'pear' is: " << myMap["pear"] << endl;
+
+    // check if a key is present in the HashMap
+    if (myMap.count("apple")) {
+        cout << "'Apple' is in the HashMap." << endl;
+    } else {
+        cout << "'Apple' is not in the HashMap." << endl;
+    }
+
+    // remove a key-value pair from the HashMap
+    myMap.erase("orange");
+
+    return 0;
+}
