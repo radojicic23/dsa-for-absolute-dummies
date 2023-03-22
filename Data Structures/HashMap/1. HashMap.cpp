@@ -58,3 +58,12 @@ int main() {
 
     return 0;
 }
+
+/*
+- More Examples on LeetCode:
+  1. Two Sum ==> https://leetcode.com/problems/two-sum/
+  2. Contains Duplicate ==> https://leetcode.com/problems/contains-duplicate/
+  3. Contains Duplicates II ==> https://leetcode.com/problems/contains-duplicate-ii/
+  4. Longest Substring Without Repeating Characters ==> https://leetcode.com/problems/longest-substring-without-repeating-characters/
+  5. Design HashMap ==> https://leetcode.com/problems/design-hashmap/
+*/
