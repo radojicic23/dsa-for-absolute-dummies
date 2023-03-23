@@ -60,10 +60,57 @@ int main() {
 }
 
 /*
+- Here are some of the most commonly used built-in functions for the hashmap data structure in C++:
+
+  - std::unordered_map: This is the standard C++ library implementation of a hashmap. It provides a way to store and access key-value pairs in constant time (on average) using hash functions.
+    - On average, the time complexity of accessing, inserting, or deleting an element in an unordered map is O(1), which means constant time. 
+      However, in the worst case, the time complexity can be O(n), where n is the number of elements in the hashmap. 
+      The space complexity of an unordered map is O(n), where n is the number of elements in the map.
+
+  - insert(): This function is used to insert a key-value pair into the hashmap. If the key already exists, it updates the value.
+    - The time complexity of this function is O(1) on average, and O(n) in the worst case, where n is the number of elements in the hashmap. 
+      The space complexity of this function is also O(1).
+
+  - erase(): This function is used to remove a key-value pair from the hashmap.
+    - The time complexity of this function is O(1) on average, and O(n) in the worst case, where n is the number of elements in the hashmap. 
+      The space complexity of this function is also O(1).
+
+  - find(): This function is used to find the value associated with a given key in the hashmap. 
+    If the key is not found, it returns an iterator pointing to the end of the hashmap.
+    - The time complexity of this function is O(1) on average, and O(n) in the worst case, where n is the number of elements in the hashmap. 
+      The space complexity of this function is O(1).
+
+
+  - clear(): This function is used to remove all elements from the hashmap.
+    - The time complexity of this function is O(n), where n is the number of elements in the hashmap. The space complexity of this function is also O(1).
+
+  - size(): This function is used to get the number of elements in the hashmap.
+    - The time complexity of this function is O(1). The space complexity of this function is also O(1).
+
+  - empty(): This function is used to check if the hashmap is empty.
+    - The time complexity of this function is O(1). The space complexity of this function is also O(1).
+
+  - begin(): This function returns an iterator to the beginning of the hashmap.
+    - The time complexity of this function is O(1). The space complexity of this function is also O(1).
+
+  - end(): This function returns an iterator to the end of the hashmap.
+    - The time complexity of this function is O(1). The space complexity of this function is also O(1).
+
+  - at(): This function is used to access the value associated with a given key in the hashmap. If the key is not found, it throws an exception.
+    - The time complexity of this function is O(1) on average, and O(n) in the worst case, where n is the number of elements in the hashmap. 
+      The space complexity of this function is O(1).
+*/
+
+/*
 - More Examples on LeetCode:
+
   1. Two Sum ==> https://leetcode.com/problems/two-sum/
+
   2. Contains Duplicate ==> https://leetcode.com/problems/contains-duplicate/
+
   3. Contains Duplicates II ==> https://leetcode.com/problems/contains-duplicate-ii/
+
   4. Longest Substring Without Repeating Characters ==> https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
   5. Design HashMap ==> https://leetcode.com/problems/design-hashmap/
 */
