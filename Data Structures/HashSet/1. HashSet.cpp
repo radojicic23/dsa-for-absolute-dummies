@@ -86,3 +86,12 @@ int main() {
   - count(): This function is used to count the number of elements in the HashSet that match a specific value. It returns the number of elements that match.
     - The time complexity of count() is constant O(1) on average. The space complexity of count() is O(1).
 */
+
+/*
+- LEETCODE EXERCISES:
+    - Two Sum ==> https://leetcode.com/problems/two-sum/
+    - Intersection of Two Arrays ==> https://leetcode.com/problems/intersection-of-two-arrays/
+    - Happy Number ==> https://leetcode.com/problems/happy-number/
+    - Contains Duplicate ==> https://leetcode.com/problems/contains-duplicate/
+    - Longest Consecutive Sequence ==> https://leetcode.com/problems/longest-consecutive-sequence/
+*/
