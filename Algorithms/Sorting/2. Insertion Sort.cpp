@@ -25,3 +25,37 @@
   - The space complexity of the insertion sort algorithm is O(1), meaning it requires a constant amount of extra space. 
     This is because the algorithm sorts the input array in place, without requiring any additional data structures or temporary storage.
 */
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+
+void insertionSort(vector<int> &arr, int n) {
+    for (int i = 1; i < n; i++) {
+        int key = arr[i];
+        int j = i - 1;
+        // Move elements of arr[0..i-1], that are greater than key,
+        // to one position ahead of their current position
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        arr[j + 1] = key;
+    }
+}
+
+
+int main() {
+    vector<int> arr = {52, 121, 3, 64, 1, 8, 23};
+    int n = arr.size();
+    // execute insertion sort on array and size 
+    insertionSort(arr, n);
+    // check to see if it's sorted
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << endl;
+    }
+
+    return 0;
+}
