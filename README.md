@@ -37,14 +37,14 @@
 ```
 
 ## DSA for Absolute Dummies😵‍💫
-- This is a super simplified examples of the common data structures and algorithms written in easy to read C++, Python and JS (for now).
+- This is a super simplified examples of the common data structures and algorithms written in easy to read C++ (for now), Python and JS (later I'll add it).
 - Reading through this will help you learn about what data structures and algorithms, how to use them etc.
 
 ## Why should I care to do this? 
 - Lack of good courses and good books.
 - It's simple, I like to learn about this stuff and every day I am working on this, I am learning too. 
-- Because I need it to refresh my memmory if I am stuck on something or whatever.. 
-- You can user it to refresh your memmory too or to learn something new, but easy way (it's hard but it will get easier in time).
+- Because I need it to refresh my memory if I am stuck on something or whatever.. 
+- You can user it to refresh your memory too or to learn something new, but easy way (it's hard but it will get easier in time).
 
 ## But data structures and algorithms are so hard!
 - Yes. Life is hard. I have just one question on that. Do you remember that first day you enter this field of programming and IT in general? 
