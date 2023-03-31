@@ -37,10 +37,12 @@
 
 using namespace std;
 
-
+// Node class represents each node in Linked List
 class Node {
 public:
+    // stores data of node
     int data;
+    // point to the next node
     Node* next;
 
     Node(int data) {
@@ -49,21 +51,25 @@ public:
     }
 };
 
-
+// Linked List class represents itself
 class LinkedList {
 private:
+    // pointer to the first node in the list
     Node* head;
 
 public:
     LinkedList() {
         this->head = NULL;
     }
-
+    // insert new node at the end of Lined List
     void insert(int data) {
+        // create new Node
         Node* newNode = new Node(data);
-
+        // if the list is empty
         if (this->head == NULL) {
+            // insert new Node at the beginning
             this->head = newNode;
+        // otherwise insert new Node at the end of the list
         } else {
             Node* current = this->head;
             
@@ -73,13 +79,17 @@ public:
             current->next = newNode;
         }
     }
-
+    // insert new node at some index position
     void insertAtIndex(int data, int position) {
+        // create new Node
         Node* newNode = new Node(data);
-
+        // if position is 0 or the list is empty
         if (this->head == NULL || position == 0) {
+            // insert new node at the beginning
             newNode->next = this->head;
             this->head = newNode;
+        // Otherwise, the method traverses the list to find the node 
+        // at the position just before the insertion point.
         } else {
             Node* current = this->head;
             int i = 0;
@@ -92,32 +102,36 @@ public:
             current->next = newNode;
         }
     }
-
+    // remove node from Linked List
     void remove(int target) {
+        // if head doesn't exist
         if (this->head == NULL) {
             return;
         }
-
+        // if head happens to be target value
         if (this->head->data == target) {
             Node* temp = this->head;
             this->head = this->head->next;
             delete temp;
             return;
         }
-
+        // set current pointer at head node
         Node* current = this->head;
-
+        // shift current pointer through Linked List
         while (current->next != NULL) {
+            // if next node from current is target value
+            // delete it
             if (current->next->data == target) {
                 Node* temp = current->next;
                 current->next = current->next->next;
                 delete temp;
                 return;
             }
+            // shifting current pointer through LL
             current = current->next;
         }
     }
-
+    // prints out the data of each node from Linked List
     void print() {
         Node* current = this->head;
 
@@ -157,5 +171,20 @@ int main() {
     list.remove(5);
     list.remove(4);
 
+    list.print();
+
     return 0;
 }
+
+
+/*
+- LEETCODE EXERCISES:
+
+    - Reverse Linked List: https://leetcode.com/problems/reverse-linked-list/
+    - Sort List: https://leetcode.com/problems/sort-list/
+    - Partition List: https://leetcode.com/problems/partition-list/
+    - Delete Node in a Linked List: https://leetcode.com/problems/delete-node-in-a-linked-list/
+    - Remove Nth Node From End of List: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+    - Palindrome Linked List: https://leetcode.com/problems/palindrome-linked-list/
+    - https://leetcode.com/problems/odd-even-linked-list/
+*/
