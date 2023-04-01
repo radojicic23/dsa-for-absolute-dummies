@@ -30,9 +30,13 @@
     - The dequeue() method removes the front element of the queue by updating the front pointer to point to the next node 
       and deleting the old front node. If the queue becomes empty after the deletion, both the front and rear pointers are set to nullptr.
 
+    - The display() method returns (print) all data from queue.
+
     - The getFront() method returns the data of the front node without removing it. 
-      The getSize() method returns the number of nodes in the linked list. 
-      The isEmpty() method returns true if the queue is empty and false otherwise.
+
+    - The getSize() method returns the number of nodes in the linked list. 
+
+    - The isEmpty() method returns true if the queue is empty and false otherwise.
 */
 
 
@@ -52,6 +56,7 @@
     - Time and Space Complexity of built-in functions (push(), pop(), front(), empty() and size()) is O(1).
     
     - The Time Complexity of the enqueue(), dequeue(), getFront(), getSize(), and isEmpty() methods is also O(1).
+    
     - The Space complexity of this implementation is O(n), where n is the number of elements in the queue, 
       because it uses a linked list to store the nodes, and each node takes up some space in memory. 
       The size of the queue is stored in a separate integer variable, which also takes up some space. 
