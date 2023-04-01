@@ -15,7 +15,8 @@
       This means that the last element added to the stack will be the first one to be removed. 
       Imagine a stack of plates in a restaurant, where new plates are added to the top of the stack and removed from the top of the stack as well.
 
-    - In programming, a stack can be implemented using an array or a linked list.
+- IMPLEMENTATION:
+    - In programming, a stack can be implemented using an array or a linked list. We will use array now.
 
     - The stack class has the following member variables:
         - top: an integer variable that keeps track of the index of the top element in the stack.
