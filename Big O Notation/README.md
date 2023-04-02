@@ -47,6 +47,11 @@ than the other.
 
 - `O(n!)` - Factorial Time: This notation represents an algorithm that takes a factorial amount of time or space to complete as the size of the input increases. This is the slowest possible time complexity, and is typically only encountered in algorithms that require checking all possible permutations or combinations of the input.
 
+## DOWNLOAD (graphical representation): 
+- [Big-O-Cheatsheet1](https://github.com/radojicic23/dsa-for-absolute-dummies/blob/master/Big%20O%20Notation/big-o-cheatsheet.png) 
+- [Big-O-Cheatsheet2](https://github.com/radojicic23/dsa-for-absolute-dummies/blob/master/Big%20O%20Notation/big-o-cheatsheet2.png)
+- [Big-O-Cheatsheet3](https://github.com/radojicic23/dsa-for-absolute-dummies/blob/master/Big%20O%20Notation/big-o-graphical.png) 
+
 ## Simpler explanation
 
 ```bash
