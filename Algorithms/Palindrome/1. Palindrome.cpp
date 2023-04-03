@@ -107,3 +107,13 @@ int main() {
 
     return 0;
 }
+
+
+/*
+- LEETCODE EXERCISES:
+    - Valid Palindrome: https://leetcode.com/problems/valid-palindrome/
+    - Palindrome Number: https://leetcode.com/problems/palindrome-number/
+    - Longest Palindromic Substring: https://leetcode.com/problems/longest-palindromic-substring/
+    - Palindrome Pairs: https://leetcode.com/problems/palindrome-pairs/
+    - Shortest Palindrome: https://leetcode.com/problems/shortest-palindrome/
+*/
