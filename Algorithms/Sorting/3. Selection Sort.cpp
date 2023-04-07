@@ -66,10 +66,15 @@ int main() {
   int n = arr.size();
   // execute selection sort on array
   selectionSort(arr, n);
-  
+
   // make sure it's sorted now
   for (int i = 0; i < n; i++) {
     cout << arr[i] << endl;
   }
   return 0;
 }
+
+/*
+- More Examples on LeetCode:
+  - Sort Colors: https://leetcode.com/problems/sort-colors/
+*/
