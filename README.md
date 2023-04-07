@@ -37,6 +37,7 @@
 ```
 
 ## DSA for Absolute Dummies😵‍💫
+
 - This is a super simplified examples of the common data structures and algorithms written in easy to read C++ (for now), Python and JS (later I'll add it).
 - Reading through this will help you learn about what data structures and algorithms, how to use them etc.
 
@@ -68,3 +69,5 @@
 | |__| | |____| |  | | |      | |__| | |__| | |  | | |  | |_| |_| |____ ____) |_|
  \_____|______|_|  |_|_|      |_____/ \____/|_|  |_|_|  |_|_____|______|_____/(_)
 ```
+
+[![cc-by-4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
