@@ -43,7 +43,7 @@
 
 ## Why should I care to do this? 
 - Lack of good courses and good books.
-- It's simple, I like to learn about this stuff and every day I am working on this, I am learning too. 
+- It's simpler for me, I like to learn about this stuff and every day working on this, I am learning too. 
 - Because I need it to refresh my memory if I am stuck on something or whatever.. 
 - You can user it to refresh your memory too or to learn something new, but easy way (it's hard but it will get easier in time).
 
@@ -55,7 +55,6 @@
 ## Where to begin?
 - You can simply start over here wherever you want. Try to go through some Data Structures first.
 - Then, you can go through google and find some easy exercises or websites with coding problems like Codewars or LeetCode.
-- I will give you at the end of every algorithm and data structure some exercises.
 - Or you can go buy some book or course and use this if you are stuck on something or you don't understand some stuff.
 
 ## Contributing
