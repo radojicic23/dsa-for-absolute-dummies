@@ -58,7 +58,7 @@
 - Or you can go buy some book or course and use this if you are stuck on something or you don't understand some stuff.
 
 ## Contributing
-- Feel free to contribute.
+- FEEL FREE TO CONTRIBUTE.
 
 ```bash
   _____ _      _    _ ______   _____  _    _ __  __ __  __ _____ ______  _____ _ 
