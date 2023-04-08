@@ -80,6 +80,12 @@ int main() {
     // execute Kadane's Algorithm
     int maxSum = kadanesAlgorithm(nums);
     cout << "The maximum subarray is: " << maxSum << endl;
-    
+
     return 0;
 }
+
+/* LeetCode Exercises:
+    - Maximum Subarray: https://leetcode.com/problems/maximum-subarray/
+    - Best Time to Buy and Sell Stock: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+    - Maximum Product Subarray: https://leetcode.com/problems/maximum-product-subarray/
+*/
