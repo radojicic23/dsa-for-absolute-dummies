@@ -44,3 +44,42 @@ Time and Space Complexity:
       This is because the algorithm only uses two variables (variable for current sum and varable for maximum sum in the end).
       Therefore, the space used by the algorithm does not depend on the size of the input array.
 */
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+/* initialize algorithm function that takes array as input (vector)
+   and return integer which is the maximum subarray sum */
+int kadanesAlgorithm(vector<int>& arr) {
+    // initialize two variables to keep track of the current sum and maximum sum
+    int maxSoFar = arr[0];
+    int maxSum = arr[0];
+    // Starting from the second element 
+    // iterate through the rest of the array
+    for (int i = 1; i < arr.size(); i++) {
+      /*calculate the current sum 
+        by adding the current element to the previous current sum 
+        and if the current number (arr[i]) is greater then current sum 
+        set the current sum to current number value */
+        maxSoFar = max(arr[i], maxSoFar + arr[i]);
+        // compare the current sum to the maximum sum
+        // if current sum is greater, update maximum sum 
+        maxSum = max(maxSum, maxSoFar);
+    }
+    // return maximum sum at the end
+    return maxSum;
+}
+
+
+int main() {
+    // initialize array
+    vector<int> nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+    // execute Kadane's Algorithm
+    int maxSum = kadanesAlgorithm(nums);
+    cout << "The maximum subarray is: " << maxSum << endl;
+    
+    return 0;
+}
