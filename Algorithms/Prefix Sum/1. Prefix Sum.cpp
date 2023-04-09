@@ -28,20 +28,29 @@
 
 using namespace std;
 
-
+// takes array as an input
+// returns new array containing the prefix sum of arr
 vector<int> prefixSum(vector<int>& arr) {
+    // initialize new array (same size as input array)
     vector<int> prefixArr(arr.size());
+    // initialize first element in prefix array (first element from input array)
     prefixArr[0] = arr[0];
+    // iterate over input array and calculate the cumulative sum up to the current element
     for (int i = 1; i < arr.size(); i++) {
+        // adding current element to the previous sum from prefix array
         prefixArr[i] = prefixArr[i - 1] + arr[i];
     }
+    // return new array at the end
     return prefixArr;
 }
 
 
 int main() {
+    // initialize input array
     vector<int> nums = {1, 2, 3, 4, 5, 6};
+    // execute prefix sum algorithm
     vector<int> prefixArr = prefixSum(nums);
+    // print all elements from new array
     for (int i = 0; i < prefixArr.size(); i++) {
         cout << prefixArr[i] << " ";
     }
