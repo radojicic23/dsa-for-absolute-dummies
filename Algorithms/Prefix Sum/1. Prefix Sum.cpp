@@ -57,3 +57,9 @@ int main() {
 
     return 0;
 }
+
+/*
+- Exercises from LeetCode:
+    - Running Sum of 1d Array: https://leetcode.com/problems/running-sum-of-1d-array/
+    - Maximum Subarray: https://leetcode.com/problems/maximum-subarray/
+*/
