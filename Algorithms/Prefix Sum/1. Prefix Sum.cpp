@@ -22,3 +22,29 @@
     - The space complexity of the algorithm is also O(N), since we need to allocate an additional vector of size N to store the prefix sum. 
       This is because the size of the prefix sum vector is equal to the size of the input array.
 */
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+
+vector<int> prefixSum(vector<int>& arr) {
+    vector<int> prefixArr(arr.size());
+    prefixArr[0] = arr[0];
+    for (int i = 1; i < arr.size(); i++) {
+        prefixArr[i] = prefixArr[i - 1] + arr[i];
+    }
+    return prefixArr;
+}
+
+
+int main() {
+    vector<int> nums = {1, 2, 3, 4, 5, 6};
+    vector<int> prefixArr = prefixSum(nums);
+    for (int i = 0; i < prefixArr.size(); i++) {
+        cout << prefixArr[i] << " ";
+    }
+
+    return 0;
+}
