@@ -12,18 +12,39 @@
                                              \______/                                                                   
 */
 /*
-- Binary search is a searching algorithm used to search for an element in a sorted array or list by repeatedly dividing the search interval in half. 
+- Binary search is a searching algorithm used to search for an element in a sorted array or list by repeatedly dividing the search interval in half.
+
   - The search begins by comparing the target value to the middle element of the sorted array. 
   - If the target value is equal to the middle element, the search is complete. 
   - If the target value is less than the middle element, the search continues on the lower half of the array. 
   - If the target value is greater than the middle element, the search continues on the upper half of the array. 
   - This process continues until the target value is found or the search interval is empty.
 
-- The time complexity of binary search is O(logn), which is more efficient than the linear search algorithm O(n), 
-  which checks all elements one by one. However, for binary search to work, the array or list must be sorted.
-  Binary search can be implemented using a while loop, recursion, or a combination of both. 
+- Time and Space Complexity:
+
+  - The time complexity of binary search is O(logn), which is more efficient than the linear search algorithm O(n), 
+    which checks all elements one by one. However, for binary search to work, the array or list must be sorted.
+    Binary search can be implemented using a while loop, recursion, or a combination of both. 
 */
-//- Implementation in C++:
+
+/*
+- When to use Binary Search: 
+  - 1. Searching in a sorted array or list: If you have a sorted array or list, binary search algorithm can be used to search for a specific element in it.
+  
+  - 2. Finding the maximum or minimum value in a function: 
+       If you have a function that is monotonically increasing or decreasing over a range, 
+       you can use binary search algorithm to find the maximum or minimum value in that range. 
+       For example, if you have a function that represents the height of a person at a given age, 
+       you can use binary search algorithm to find the age at which the person reaches their maximum height.
+  
+  - 3. If you have a sorted array of integers, you can use binary search algorithm to find the first occurrence of a specific integer.
+  
+  - 4. Finding the closest value to a target value: 
+       If you have a sorted array or list and you want to find the closest value to a target value, you can use binary search algorithm.
+
+- Overall, binary search algorithm is most useful when we are dealing with sorted arrays or lists, 
+  monotonic properties, and when we need to find the maximum or minimum value in a function.
+*/
 
 #include <iostream>
 #include <vector>
@@ -63,25 +84,6 @@ int main() {
     }
     return 0;
 }
-
-/*
-- When to use Binary Search: 
-  - 1. Searching in a sorted array or list: If you have a sorted array or list, binary search algorithm can be used to search for a specific element in it.
-  
-  - 2. Finding the maximum or minimum value in a function: 
-       If you have a function that is monotonically increasing or decreasing over a range, 
-       you can use binary search algorithm to find the maximum or minimum value in that range. 
-       For example, if you have a function that represents the height of a person at a given age, 
-       you can use binary search algorithm to find the age at which the person reaches their maximum height.
-  
-  - 3. If you have a sorted array of integers, you can use binary search algorithm to find the first occurrence of a specific integer.
-  
-  - 4. Finding the closest value to a target value: 
-       If you have a sorted array or list and you want to find the closest value to a target value, you can use binary search algorithm.
-
-- Overall, binary search algorithm is most useful when we are dealing with sorted arrays or lists, 
-  monotonic properties, and when we need to find the maximum or minimum value in a function.
-*/
 
 /*
 - More Examples on LeetCode: 
