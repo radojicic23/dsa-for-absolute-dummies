@@ -11,6 +11,7 @@
 
 /*
 - Insertion sort algorithm is a simple sorting algorithm that builds the final sorted array one item at a time. Here's how the algorithm works:
+
   - Start with an unsorted array of elements.
   - Take the first element of the array and assume it is sorted.
   - For each subsequent element, compare it to the sorted elements to its left. 
@@ -19,6 +20,7 @@
   - Repeat steps 3 and 4 for each subsequent element in the unsorted portion of the array until the entire array is sorted.
 
 - Time and Space Complexity:
+
   - The time complexity of the insertion sort algorithm is O(n^2), where n is the number of elements in the array. 
     This is because, in the worst case scenario, the algorithm must make n comparisons for each of the n elements in the array.
 
