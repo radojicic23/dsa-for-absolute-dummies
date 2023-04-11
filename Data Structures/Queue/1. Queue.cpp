@@ -39,6 +39,18 @@
     - The isEmpty() method returns true if the queue is empty and false otherwise.
 */
 
+/*
+- TIME AND SPACE COMPLEXITY:
+    - Time and Space Complexity of built-in functions (push(), pop(), front(), empty() and size()) is O(1).
+    
+    - The Time Complexity of the enqueue(), dequeue(), getFront(), getSize(), and isEmpty() methods is also O(1).
+
+    - The Space complexity of this implementation is O(n), where n is the number of elements in the queue, 
+      because it uses a linked list to store the nodes, and each node takes up some space in memory. 
+      The size of the queue is stored in a separate integer variable, which also takes up some space. 
+      Overall, the amount of memory used by this implementation increases linearly with the number of elements in the queue.
+*/
+
 #include <iostream>
 // we can implement a queue using the standard template library (later)
 #include <queue> 
@@ -188,16 +200,3 @@ int main() {
 
     return 0;
 }
-
-
-/*
-- TIME AND SPACE COMPLEXITY:
-    - Time and Space Complexity of built-in functions (push(), pop(), front(), empty() and size()) is O(1).
-    
-    - The Time Complexity of the enqueue(), dequeue(), getFront(), getSize(), and isEmpty() methods is also O(1).
-
-    - The Space complexity of this implementation is O(n), where n is the number of elements in the queue, 
-      because it uses a linked list to store the nodes, and each node takes up some space in memory. 
-      The size of the queue is stored in a separate integer variable, which also takes up some space. 
-      Overall, the amount of memory used by this implementation increases linearly with the number of elements in the queue.
-*/
