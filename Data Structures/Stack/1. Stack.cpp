@@ -40,6 +40,30 @@
        Otherwise, it returns the value of the element at the top index.
 */
 
+/*
+- TIME AND SPACE COMPLEXITY:
+
+    - TIME COMPLEXITY:
+
+        - Push operation: O(1)
+        - Pop operation: O(1)
+        - Peek operation: O(1)
+        - IsEmpty operation: O(1)
+
+    - All of the stack operations have a constant time complexity of O(1), 
+      which means they take the same amount of time to execute regardless of the size of the stack.
+
+    - SPACE COMPLEXITY:
+
+        - The space complexity of a stack implemented using an array is O(n), where n is the maximum size of the stack. 
+          This is because we need to allocate an array of size n to store the elements of the stack.
+        
+        - In practice, the space complexity may be less than O(n) if the size of the stack is dynamic and can grow or shrink based on the number 
+          of elements it contains. A stack implemented using a dynamic array or a linked list would have a space complexity of O(m), 
+          where m is the number of elements in the stack.
+*/
+
+
 #include <iostream>
   
 using namespace std;
@@ -131,26 +155,3 @@ int main() {
   
     return 0;
 }
-
-/*
-- TIME AND SPACE COMPLEXITY:
-
-    - TIME COMPLEXITY:
-
-        - Push operation: O(1)
-        - Pop operation: O(1)
-        - Peek operation: O(1)
-        - IsEmpty operation: O(1)
-
-    - All of the stack operations have a constant time complexity of O(1), 
-      which means they take the same amount of time to execute regardless of the size of the stack.
-
-    - SPACE COMPLEXITY:
-
-        - The space complexity of a stack implemented using an array is O(n), where n is the maximum size of the stack. 
-          This is because we need to allocate an array of size n to store the elements of the stack.
-        
-        - In practice, the space complexity may be less than O(n) if the size of the stack is dynamic and can grow or shrink based on the number 
-          of elements it contains. A stack implemented using a dynamic array or a linked list would have a space complexity of O(m), 
-          where m is the number of elements in the stack.
-*/
