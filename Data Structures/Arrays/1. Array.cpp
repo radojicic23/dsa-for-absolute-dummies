@@ -24,6 +24,29 @@
   They are commonly used in programming for a variety of tasks, such as sorting, searching, and processing large amounts of data.
 */
 
+/*
+- Here are some of the most commonly used built-in functions for the array data structure in C++:
+    - max(arr) -> Returns highest number in array, in this case 4.
+    - min(arr) -> Returns smallest number in array, in this case 1.
+    - sort(arr.begin(), arr.end()) -> Sorting arr in increasing order, in this case it's already in increasing order.
+    - arr.size -> Return size or length of this array, in this case 4.
+    - arr.empty() -> Test if array is empty.
+    - arr.push_back('something here') -> Append or insert element in array.
+    - arr.pop_back() -> Pop or remove element from array.
+    - arr.erase() -> Erase element from array.
+    - swap(element1, element2) -> swap elements.
+*/
+
+/*
+- Time and Space complexity:
+  - Look-up (Access) - O(1) -	When we do array[1], the program can instantly find the value stored at the first location.
+  - Add	- O(1) - More accurately this is amortised O(1). When we add to the end of the array, it only takes constant time.
+  - Pop	- O(1) - When we remove the last element of the array, it takes constant time.
+  - Insert - O(N) - When we insert an element to the middle of the array, it takes O(N) time. The whole array needs to be restructured to accommodate the new element.
+  - Remove - O(N) -	When we remove an element in the middle of the array, it takes O(N) time. The whole array needs to be restructured to replace the missing gap of the replaced element.
+  - Length - O(1) - This may seem like to be O(N) as we have to go through the whole array to check its length. However, checking the length of an array in many languages should be pre-computed in their data structures, so it only takes constant time.
+*/
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -41,22 +64,3 @@ int main() {
                               {9, 10, 7, 12},
                               {3, 14, 5, 16}}; 
 };
-
-// max(arr) -> Returns highest number in array, in this case 4.
-// min(arr) -> Returns smallest number in array, in this case 1.
-// sort(arr.begin(), arr.end()) -> Sorting arr in increasing order, in this case it's already in increasing order.
-// arr.size -> Return size or length of this array, in this case 4.
-// arr.empty() -> Test if array is empty.
-// arr.push_back('something here') -> Append or insert element in array.
-// arr.pop_back() -> Pop or remove element from array.
-// arr.erase() -> Erase element from array.
-// swap(element1, element2) -> swap elements.
-
-/*
-- Look-up (Access) - O(1) -	When we do array[1], the program can instantly find the value stored at the first location.
-- Add	- O(1) - More accurately this is amortised O(1). When we add to the end of the array, it only takes constant time.
-- Pop	- O(1) - When we remove the last element of the array, it takes constant time.
-- Insert - O(N) - When we insert an element to the middle of the array, it takes O(N) time. The whole array needs to be restructured to accommodate the new element.
-- Remove - O(N) -	When we remove an element in the middle of the array, it takes O(N) time. The whole array needs to be restructured to replace the missing gap of the replaced element.
-- Length - O(1) - This may seem like to be O(N) as we have to go through the whole array to check its length. However, checking the length of an array in many languages should be pre-computed in their data structures, so it only takes constant time.
-*/
