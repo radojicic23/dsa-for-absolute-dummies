@@ -13,37 +13,13 @@
 */
 
 /*
-- String is a sequence of characters stored in contiguous memory locations. 
-  It is represented by the std::string class, which is a part of the standard library.
-  
-  Strings can be manipulated in a variety of ways using built-in string functions, such as length(), substr(), find(), and replace(). 
-  There are also operators that can be used with strings, such as the + operator, which concatenates two strings.
+- EXPLANATION:
+  - String is a sequence of characters stored in contiguous memory locations. 
+    It is represented by the std::string class, which is a part of the standard library.
+    
+  - Strings can be manipulated in a variety of ways using built-in string functions, such as length(), substr(), find(), and replace(). 
+    There are also operators that can be used with strings, such as the + operator, which concatenates two strings.
 */
-
-#include <iostream>
-#include <string>
-
-using namespace std;
-
-int main() {
-
-  // declare and initialize a string variable
-  string myString = "Hello World!";
-  
-  // built-in function for string size
-  int strSize = myString.length();
-  
-  // we can use operators like "+" on strings
-  string str1 = "John";
-  string str2 = "Wick";
-  string fullName = str1 + " " + str2;
-
-  cout << myString << endl;
-  cout << strSize << endl;
-  cout << "Hello, " << fullName << "!" << endl;
-
-  return 0; 
-}
 
 /*
 - HERE ARE SOME OF THE MOST COMMONLY USED BUILT-IN FUNCTIONS FOR HASHMAP IN C++:
@@ -81,3 +57,28 @@ int main() {
   - c_str(): O(1) time complexity. Space complexity is O(n), where n is the length of the string, 
     as a null-terminated character array of size n+1 needs to be created to store the string.
 */
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+
+  // declare and initialize a string variable
+  string myString = "Hello World!";
+  
+  // built-in function for string size
+  int strSize = myString.length();
+  
+  // we can use operators like "+" on strings
+  string str1 = "John";
+  string str2 = "Wick";
+  string fullName = str1 + " " + str2;
+
+  cout << myString << endl;
+  cout << strSize << endl;
+  cout << "Hello, " << fullName << "!" << endl;
+
+  return 0; 
+}
