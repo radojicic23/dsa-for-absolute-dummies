@@ -50,3 +50,49 @@
           such as a hash table or priority queue, which would increase the space complexity.
 */
 
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <climits> 
+
+using namespace std;
+
+// it takes vector (array) as input and k (window size)
+int maxSum(vector<int>& arr, int k) {
+    // initialize arr size
+    int n = arr.size();
+    // sum of the current window
+    int sum = 0;
+    // included from <climits>
+    int maxSum = INT_MIN;
+
+    // create a window of size k 
+    // calculate the sum of its elements
+    for (int i = 0; i < k; i++) {
+        // sum of current window
+        sum += arr[i];
+    }
+    // 'max' included from <algorithm>
+    // calculate max sum
+    maxSum = max(maxSum, sum);
+
+    // slide the window by one element at a time 
+    // recalculate the max sum
+    for (int i = k; i < n; i++) {
+        sum += arr[i] - arr[i - k];
+        maxSum = max(maxSum, sum);
+    }
+    return maxSum;
+}
+
+
+int main() {
+    // initialize input arry
+    vector<int> arr = {1, 3, -1, -3, 5, 3, 6, 7, 7}; // Output: 20
+    // initialize window size
+    int k = 3;
+    // execute algorithm
+    cout << "Output: " << maxSum(arr, k) << endl;
+
+    return 0;
+}
