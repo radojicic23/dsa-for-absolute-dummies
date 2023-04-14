@@ -10,10 +10,11 @@
 */
 
 /*
-- A palindrome is a string or number that reads the same backward as forward. 
-  For example, "racecar" is a palindrome because it reads the same way forward and backward.
+- EXPLANATION:
+    - A palindrome is a string or number that reads the same backward as forward. 
+      For example, "racecar" is a palindrome because it reads the same way forward and backward.
 
-- There are multiple ways to check if a string is a palindrome or not.
+    - There are multiple ways to check if a string is a palindrome or not.
 
 - TIME AND SPACE COMPLEXITY:
     - The time complexity of the Palindrome algorithm is O(n/2), which simplifies to O(n), where n is the length of the input string. 
