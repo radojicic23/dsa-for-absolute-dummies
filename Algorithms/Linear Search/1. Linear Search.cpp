@@ -10,8 +10,10 @@
 */
 
 /*
-- Linear search, also known as sequential search, is a simple algorithm for finding a value in a list or array. 
-  The algorithm checks each element of the list in turn, starting from the first, until it finds the target value or reaches the end of the list.
+- EXPLANATION:
+    - Linear search, also known as sequential search, is a simple algorithm for finding a value in a list or array. 
+      The algorithm checks each element of the list in turn, starting from the first, 
+      until it finds the target value or reaches the end of the list.
 
 - TIME AND SPACE COMPLEXITY:
 
@@ -23,7 +25,18 @@
     - Space Complexity:
         - The space complexity of the linear search algorithm is O(1), because it uses a constant amount of additional space, regardless of the size of the input array. 
           The only additional space used by the algorithm is the memory required to store the loop index variable i and the function arguments arr, n, and x. 
-          Therefore, the space used by the algorithm is independent of the size of the input array, making it a space-efficient algorithm
+          Therefore, the space used by the algorithm is independent of the size of the input array, making it a space-efficient algorithm.
+
+- WHEN TO USE LINEAR SEARCH:
+    - Linear search is also useful as a backup algorithm when the data is sorted, and 
+      a binary search algorithm fails to find the desired element due to data corruption or other issues.
+
+    - However, linear search is generally not a good choice for large datasets, 
+      as its time complexity of O(n) makes it inefficient compared to other searching algorithms, 
+      such as binary search, which has a time complexity of O(log n).
+
+    - Overall, linear search is a good choice when the dataset is small or unsorted, 
+      when the data is stored in a linked list, or when it is used as a backup algorithm.
 */
 
 #include <iostream>
