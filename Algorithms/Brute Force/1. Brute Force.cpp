@@ -10,23 +10,29 @@
 */
 
 /*
-- Brute Force algorithm is a straightforward approach to solve a problem by trying all possible solutions and selecting the best one. 
-  This method is usually used when the input size is relatively small and has a limited number of possibilities. 
-  Brute Force algorithm is also known as Exhaustive Search algorithm, as it exhausts all possible solutions to find the optimal solution.
+- EXPLANATION: 
+  - Brute Force algorithm is a straightforward approach to solve a problem by trying all possible solutions and selecting the best one. 
+    This method is usually used when the input size is relatively small and has a limited number of possibilities. 
+    Brute Force algorithm is also known as Exhaustive Search algorithm, as it exhausts all possible solutions to find the optimal solution.
 
-- Time and Space Complexity:
-  The time and space complexity of the Brute Force algorithm depends on the size of the input and the number of possible solutions.
+- TIME AND SPACE COMPLEXITY:
+  - The time and space complexity of the Brute Force algorithm depends on the size of the input and the number of possible solutions.
   
-  For example, if we have an array of size n, and we want to find the maximum element in the array, 
-  the time complexity of the Brute Force algorithm is O(n), since we need to iterate through all n elements of the array to find the maximum element. 
-  The space complexity is O(1), since we only need to store one variable to keep track of the maximum value.
+  - For example, if we have an array of size n, and we want to find the maximum element in the array, 
+    the time complexity of the Brute Force algorithm is O(n), since we need to iterate through all n elements of the array to find the maximum element. 
+    The space complexity is O(1), since we only need to store one variable to keep track of the maximum value.
 
-  However, for some problems, the number of possible solutions can be very large, and the Brute Force algorithm may take exponential time. 
-  In such cases, the time complexity of the Brute Force algorithm can be expressed as O(2^n) or O(n!), where n is the size of the input.
+  - However, for some problems, the number of possible solutions can be very large, and the Brute Force algorithm may take exponential time. 
+    In such cases, the time complexity of the Brute Force algorithm can be expressed as O(2^n) or O(n!), where n is the size of the input.
+
+- WHEN TO USE BRUTE FORCE ALGORITHM:
+  - Brute Force algorithms are a good choice when the problem space is small, 
+    the exact solution is required, or when other more efficient algorithms are not available.
 */
 
 /*
-- Example: 
+- EXAMPLE: 
+
   Let's consider a simple example to illustrate the Brute Force algorithm. 
   Suppose we have an array of integers, and we want to find the maximum element in the array. 
   We can implement the Brute Force algorithm to solve this problem as follows:
