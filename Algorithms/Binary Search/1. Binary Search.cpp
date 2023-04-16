@@ -12,7 +12,11 @@
                                              \______/                                                                   
 */
 /*
-- Binary search is a searching algorithm used to search for an element in a sorted array or list by repeatedly dividing the search interval in half.
+- EXPLANATIONS:
+  - Binary search is a searching algorithm used to search for an element in a sorted array or 
+    list by repeatedly dividing the search interval in half.
+
+- STEPS:
 
   - The search begins by comparing the target value to the middle element of the sorted array. 
   - If the target value is equal to the middle element, the search is complete. 
@@ -20,15 +24,24 @@
   - If the target value is greater than the middle element, the search continues on the upper half of the array. 
   - This process continues until the target value is found or the search interval is empty.
 
-- Time and Space Complexity:
+- TIME AND SPACE COMPLEXITY:
 
   - The time complexity of binary search is O(logn), which is more efficient than the linear search algorithm O(n), 
     which checks all elements one by one. However, for binary search to work, the array or list must be sorted.
     Binary search can be implemented using a while loop, recursion, or a combination of both. 
+
+  - The space complexity of binary search algorithm is O(1), 
+    which means that the space used by the algorithm does not depend on the size of the input array or list. 
+    This is because binary search algorithm performs the search operation iteratively, 
+    and the only additional space required is for storing a few integer variables representing the start, end, and 
+    middle indices of the array or list being searched.
+    Therefore, the space complexity of binary search algorithm is constant and independent of the size of the input array or list, 
+    making it a space-efficient algorithm.
 */
 
 /*
-- When to use Binary Search: 
+- WHEN TO USE BINARY SEARCH ALGORITHM:
+
   - 1. Searching in a sorted array or list: If you have a sorted array or list, binary search algorithm can be used to search for a specific element in it.
   
   - 2. Finding the maximum or minimum value in a function: 
@@ -42,8 +55,8 @@
   - 4. Finding the closest value to a target value: 
        If you have a sorted array or list and you want to find the closest value to a target value, you can use binary search algorithm.
 
-- Overall, binary search algorithm is most useful when we are dealing with sorted arrays or lists, 
-  monotonic properties, and when we need to find the maximum or minimum value in a function.
+  - Overall, binary search algorithm is most useful when we are dealing with sorted arrays or lists, 
+    monotonic properties, and when we need to find the maximum or minimum value in a function.
 */
 
 #include <iostream>
