@@ -11,8 +11,10 @@
 */
 
 /*
- - A linked list is a data structure consisting of a sequence of nodes, where each node contains data and a pointer to the next node in the sequence. 
-  It is useful for storing and manipulating collections of data that need to be dynamically resized or modified.
+- EXPLANATION:
+    - A linked list is a data structure consisting of a sequence of nodes, 
+      where each node contains data and a pointer to the next node in the sequence. 
+      It is useful for storing and manipulating collections of data that need to be dynamically resized or modified.
 
 - RESPRESENTATION OF LINKED LIST:
     - Each node in a linked list contains:
