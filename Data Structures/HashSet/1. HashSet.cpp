@@ -10,8 +10,9 @@
 */
 
 /*
-- HashSet is a data structure that is used to store a collection of unique elements in no particular order. 
-  It is implemented as an unordered set, using a hash table internally to achieve efficient search and insertion of elements.
+- EXPLANATION: 
+  - HashSet is a data structure that is used to store a collection of unique elements in no particular order. 
+    It is implemented as an unordered set, using a hash table internally to achieve efficient search and insertion of elements.
 
 - KEY FEATURES OF HASHSET IN C++:
   - It provides constant-time average complexity for most operations such as insertion, removal, and search.
@@ -93,6 +94,7 @@ int main() {
 
 /*
 - LEETCODE EXERCISES:
+
     - Two Sum ==> https://leetcode.com/problems/two-sum/
     - Intersection of Two Arrays ==> https://leetcode.com/problems/intersection-of-two-arrays/
     - Happy Number ==> https://leetcode.com/problems/happy-number/
