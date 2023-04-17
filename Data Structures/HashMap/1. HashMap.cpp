@@ -13,10 +13,11 @@
 */
 
 /*
-- HashMap is a data structure that allows you to store and retrieve key-value pairs with constant time complexity. 
-  In C++, the HashMap data structure is implemented using the unordered_map class from the Standard Template Library (STL).
+- EXPLANATIONS:
+  - HashMap is a data structure that allows you to store and retrieve key-value pairs with constant time complexity. 
+    In C++, the HashMap data structure is implemented using the unordered_map class from the Standard Template Library (STL).
 
-- Here's a brief explanation of how the HashMap works:
+- BRIEF EXPLANATION OF HOW THE HASHMAP WORKS:
   - A hash function is used to convert the key into an index in the HashMap's underlying array.
 
   - Each index in the array holds a linked list of key-value pairs that have the same hash code (known as a "bucket").
@@ -30,7 +31,7 @@
 */
 
 /*
-- Here are some of the most commonly used built-in functions for the hashmap data structure in C++:
+- - SOME OF THE MOST COMMONLY USED BUILT-IN FUNCTIONS: 
 
   - std::unordered_map: This is the standard C++ library implementation of a hashmap. It provides a way to store and access key-value pairs in constant time (on average) using hash functions.
     - On average, the time complexity of accessing, inserting, or deleting an element in an unordered map is O(1), which means constant time. 
@@ -49,7 +50,6 @@
     If the key is not found, it returns an iterator pointing to the end of the hashmap.
     - The time complexity of this function is O(1) on average, and O(n) in the worst case, where n is the number of elements in the hashmap. 
       The space complexity of this function is O(1).
-
 
   - clear(): This function is used to remove all elements from the hashmap.
     - The time complexity of this function is O(n), where n is the number of elements in the hashmap. The space complexity of this function is also O(1).
