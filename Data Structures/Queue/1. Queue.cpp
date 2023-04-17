@@ -11,10 +11,11 @@
 */
 
 /*
-- A queue is a data structure in C++ that is similar to a real-world queue, such as a line at a store or a bus stop. 
-  The queue data structure is a collection of elements, where the elements are added to the back and removed from the front. 
-  The first element added to the queue will be the first one to be removed, 
-  which is why it is also called a First-In-First-Out (FIFO) data structure.
+- EXPLANATION:
+    - A queue is a data structure in C++ that is similar to a real-world queue, such as a line at a store or a bus stop. 
+      The queue data structure is a collection of elements, where the elements are added to the back and removed from the front. 
+      The first element added to the queue will be the first one to be removed, 
+      which is why it is also called a First-In-First-Out (FIFO) data structure.
 
 
 - IMPLEMENTATION:
