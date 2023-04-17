@@ -13,19 +13,21 @@
 */
 
 /*
-- An array is a data structure that stores a collection of elements of the same data type in a contiguous block of memory. 
-  It provides a way to store and access a group of related values using a single variable name.
+- EXPLANATION:
+  - An array is a data structure that stores a collection of elements of the same data type in a contiguous block of memory. 
+    It provides a way to store and access a group of related values using a single variable name.
 
-- Each element in an array is identified by an index, which represents its position in the array. 
-  The index starts at 0 for the first element, and increases by 1 for each subsequent element. 
-  This means that if an array has n elements, the indices range from 0 to n-1.
+  - Each element in an array is identified by an index, which represents its position in the array. 
+    The index starts at 0 for the first element, and increases by 1 for each subsequent element. 
+    This means that if an array has n elements, the indices range from 0 to n-1.
 
-- Arrays can be used to store and manipulate different types of data, such as numbers, characters, strings, and objects. 
-  They are commonly used in programming for a variety of tasks, such as sorting, searching, and processing large amounts of data.
+  - Arrays can be used to store and manipulate different types of data, such as numbers, characters, strings, and objects. 
+    They are commonly used in programming for a variety of tasks, such as sorting, searching, and processing large amounts of data.
 */
 
 /*
-- Here are some of the most commonly used built-in functions for the array data structure in C++:
+- SOME OF THE MOST COMMONLY USED BUILT-IN FUNCTIONS: 
+
     - max(arr) -> Returns highest number in array, in this case 4.
     - min(arr) -> Returns smallest number in array, in this case 1.
     - sort(arr.begin(), arr.end()) -> Sorting arr in increasing order, in this case it's already in increasing order.
@@ -38,7 +40,8 @@
 */
 
 /*
-- Time and Space complexity:
+- TIME AND SPACE COMPLEXITY:
+
   - Look-up (Access) - O(1) -	When we do array[1], the program can instantly find the value stored at the first location.
   - Add	- O(1) - More accurately this is amortised O(1). When we add to the end of the array, it only takes constant time.
   - Pop	- O(1) - When we remove the last element of the array, it takes constant time.
