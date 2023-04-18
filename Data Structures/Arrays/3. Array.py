@@ -24,7 +24,7 @@
     - Arrays can be used to store and manipulate different types of data, such as numbers, characters, strings, and objects. 
       They are commonly used in programming for a variety of tasks, such as sorting, searching, and processing large amounts of data.
       
--  MOST COMMONLY USED BUILT-IN FUNCTIONS:
+- MOST COMMONLY USED BUILT-IN FUNCTIONS:
 
     - array.append(x) - This function is used to add an element x to the end of the array.
     - array.extend(iterable) - This function is used to add the elements of an iterable (such as a list or tuple) to the end of the array.
@@ -36,4 +36,17 @@
     - array.sort() - This function is used to sort the elements of the array in ascending order.
     - array.reverse() - This function is used to reverse the order of the elements in the array.
     - len(array) - This function is used to return the number of elements in the array.
+    
+- TIME AND SPACE COMPLEXITY:
+
+    - array.append(x) - Time complexity: O(1), Space complexity: O(1)
+    - array.extend(iterable) - Time complexity: O(k), where k is the length of the iterable being added, Space complexity: O(k)
+    - array.insert(i, x) - Time complexity: O(n), where n is the number of elements in the array, Space complexity: O(1)
+    - array.remove(x) - Time complexity: O(n), where n is the number of elements in the array, Space complexity: O(1)
+    - array.pop(i) - Time complexity: O(n), where n is the number of elements in the array, Space complexity: O(1)
+    - array.index(x) - Time complexity: O(n), where n is the number of elements in the array, Space complexity: O(1)
+    - array.count(x) - Time complexity: O(n), where n is the number of elements in the array, Space complexity: O(1)
+    - array.sort() - Time complexity: O(n log n), where n is the number of elements in the array, Space complexity: O(1)
+    - array.reverse() - Time complexity: O(n), where n is the number of elements in the array, Space complexity: O(1)
+    - len(array) - Time complexity: O(1), Space complexity: O(1)
 '''
