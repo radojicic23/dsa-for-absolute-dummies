@@ -50,3 +50,49 @@
     - array.reverse() - Time complexity: O(n), where n is the number of elements in the array, Space complexity: O(1)
     - len(array) - Time complexity: O(1), Space complexity: O(1)
 '''
+
+# One Dimensional Array
+array1D = [1, 2, 3, 4]
+
+# Two Dimensional Array
+array2D = [[1, 2, 3], [4, 5, 6]]
+
+# Two Dimensional (n x n) Array
+array2DNxN = [[1, 2, 3],
+              [4, 5, 6],
+              [7, 8, 9]]
+
+# initialize new array
+newArray = []
+
+# add element to array
+newArray.append(1) # [1]
+newArray.append(2) # [1, 2]
+newArray.append(3) # [1, 2, 3]
+
+# insert element at a specific index
+newArray.insert(1, 10) # [1, 10, 2, 3]
+
+# remove specific element
+newArray.remove(10) # [1, 2, 3]
+
+# remove element from top of the array
+newArray.pop() # [1, 2]
+
+# return position of element
+newArray.index(1) # 0
+
+# initialize new array
+myArray = [3, 3, 2, 1, 4, 5, 5, 0]
+
+# count the number of occurrences
+myArray.count(3) # 2
+
+# sort array elements in ascending order
+myArray.sort() # [0, 1, 2, 3, 3, 4, 5, 5]
+
+# reverse the order of the elements in the array
+myArray.reverse() # [5, 5, 4, 3, 3, 2, 1, 0]
+
+# number of elements in the array
+print(len(myArray)) # 8
