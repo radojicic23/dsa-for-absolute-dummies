@@ -31,7 +31,7 @@
     - string.strip(): Returns a new string with any whitespace characters removed from the beginning and end of the string.
     - string.startswith(substring): Returns True if the string starts with the specified substring, otherwise returns False.
     - string.endswith(substring): Returns True if the string ends with the specified substring, otherwise returns False.
-    - string.find(substring): Returns the index of the first occurrence of the specified substring in the string, or -1 if the substring is not found.
+    - string.find(substring): Returns the index of the first occurrence of the specified substring in the string, or -1 if it's is not found.
     - string.replace(old, new): Returns a new string where all occurrences of the old substring are replaced with the new substring.
     - string.split(separator): Returns a list of substrings separated by the specified separator.
     - string.join(iterable): Returns a new string that is the concatenation of the strings in the iterable, separated by the original string.
@@ -80,3 +80,44 @@
           where n is the total length of the format string plus the total length of all replacement values. 
           The space complexity is also O(n), since the function needs to create a new string object to store the formatted text.
 '''
+
+# initialize string
+myString = "Hello, world!"
+
+# returns length (size) of the string
+len(myString) # 13
+
+# returns new string with all characters uppercase
+myString.upper() # HELLO, WORLD!
+
+# returns new string with all characters lower
+myString.lower() # hello, world!
+
+# returns new string with the first character of each word capitalized
+myString.title() # Hello, World!
+
+# returns new string with any whitespace characters removed from the beginning and end of the string
+myString.strip()
+
+# returns True if string starts with specified character or substring, False otherwise
+myString.startswith("He") # True
+myString.startswith("Le") # False
+
+# returns True if string ends with specified character or substring, False otherwise
+myString.endswith("!") # True
+myString.endswith("world!!!") # False
+
+# returns the index of the first occurrence of the specified substring in the string and -1 if it's not found
+myString.find("world!") # 7
+
+# return new string where all occurrences of the old string are replaced with new substring or character
+myString.replace("!", "!!!!") # Hello, world!!!!
+
+# returns a new string that is the concatenation of the strings in the iterable, separated by the original string
+myString.join("..") # .Hello, world!.
+
+# returns a list of substrings separated by the specified separator
+myString.split(",") # ['Hello', ' world!']
+
+newString = "My name is {name} and they call me {nickname}."
+newString.format(name = "John Wick", nickname = "Baba Yaga") # My name is John Wick and they call me Baba Yaga.
