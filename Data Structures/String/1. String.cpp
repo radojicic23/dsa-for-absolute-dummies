@@ -22,7 +22,7 @@
 */
 
 /*
-- HERE ARE SOME OF THE MOST COMMONLY USED BUILT-IN FUNCTIONS FOR HASHMAP IN C++:
+- HERE ARE SOME OF THE MOST COMMONLY USED BUILT-IN FUNCTIONS FOR STRINGS IN C++:
 
   - length(): This function returns the length of the string, i.e., the number of characters in the string.
   - substr(): This function returns a substring of the original string, starting from a given position and with a given length.
