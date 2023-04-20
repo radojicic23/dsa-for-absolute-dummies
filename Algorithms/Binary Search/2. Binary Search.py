@@ -27,3 +27,16 @@
     - If the target value is greater than the middle element, the search continues on the upper half of the array. 
     - This process continues until the target value is found or the search interval is empty.
 '''
+
+'''
+- TIME AND SPACE COMPLEXITY:
+
+    - The time complexity of the Binary Search Algorithm is O(log n), where n is the number of elements in the list. 
+      This is because each iteration of the loop cuts the size of the search space in half. 
+      Therefore, the algorithm can find the target value in a large list much more quickly than a linear search 
+      that would have a time complexity of O(n).
+      
+    - The space complexity of the Binary Search Algorithm is O(1), which means that it uses a constant amount of memory. 
+      This is because the algorithm only needs to store a few variables (low, high, and mid) 
+      to keep track of the search space and the current position. 
+'''
