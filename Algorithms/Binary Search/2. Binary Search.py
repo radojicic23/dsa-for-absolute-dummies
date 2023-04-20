@@ -40,3 +40,42 @@
       This is because the algorithm only needs to store a few variables (low, high, and mid) 
       to keep track of the search space and the current position. 
 '''
+
+# initialize binary search 
+# it takes array as an input and target value
+def binary_search(arr, target):
+    # initialize two pointers 
+    # left pointer at the beginning of the list
+    # right pointer at the end of the list
+    left = 0
+    right = len(arr) - 1
+    # loop through as long as left pointer is less than or equal to right pointer
+    while (left <= right):
+        # find middle value
+        mid = (left + right) // 2
+        # if middle value is target return index (mid)
+        if arr[mid] == target:
+            return mid
+        # if target is greater than middle value
+        # we know that the target value must be in the upper half of the array
+        # update left pointer 
+        elif target > arr[mid]:
+            left = mid + 1
+        # otherwise
+        else:
+            right = mid - 1
+    # if the target value is not found
+    return -1
+
+# initialize array
+my_array = [1, 2, 4, 10, 20, 30, 100]
+# initialize target value
+target = 2
+# run binary search algorithm 
+result = binary_search(my_array, target)
+
+
+if result == -1:
+    print("Target not found!")
+else:
+    print("Target value found at index " +  str(result) + ".")
