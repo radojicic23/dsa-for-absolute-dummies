@@ -79,3 +79,13 @@ if result == -1:
     print("Target not found!")
 else:
     print("Target value found at index " +  str(result) + ".")
+    
+
+'''
+- LEETCODE EXAMPLES:
+
+    - Binary Search ==> https://leetcode.com/problems/binary-search/
+    - Find Minimum in Rotated Sorted Array ==> https://leetcode.com/problems/binary-search/
+    - Find Peak Element ==> https://leetcode.com/problems/find-peak-element/
+    - Find Minimum in Rotated Sorted Array II ==> https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/
+'''
