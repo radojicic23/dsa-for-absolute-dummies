@@ -58,3 +58,9 @@ my_array = [20, 50, 2, 321, 8, 121, 256, 133, 32]
 # run Brute Force algorithm 
 max_value = bruteForce(my_array)
 print(max_value) # 321
+
+"""
+- LEETCODE EXAMPLES:
+    - Running Sum of 1d Array ==> https://leetcode.com/problems/running-sum-of-1d-array/
+    - Count Number of Pairs With Absolute Difference K ==> https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/
+"""
