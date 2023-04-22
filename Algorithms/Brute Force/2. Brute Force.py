@@ -33,3 +33,28 @@
     - The problem requires exhaustive search
     - Brute Force algorithm can be used as a baseline for other more advanced algorithms.
 """
+
+"""
+- EXAMPLE:
+    - Let's consider a simple example to illustrate the Brute Force algorithm. 
+      Suppose we have an array of integers, and we want to find the maximum element in the array. 
+"""
+
+# takes array as an input
+def bruteForce(array):
+    # we assume that the first value is the max value from the array
+    max_value = array[0]
+    # go through all numbers in the array
+    for i in range(len(array)):
+        # if current value is greater than the last max value
+        if array[i] > max_value:
+            # update max value
+            max_value = array[i]
+    # return max value
+    return max_value
+
+# initialize new array
+my_array = [20, 50, 2, 321, 8, 121, 256, 133, 32]
+# run Brute Force algorithm 
+max_value = bruteForce(my_array)
+print(max_value) # 321
