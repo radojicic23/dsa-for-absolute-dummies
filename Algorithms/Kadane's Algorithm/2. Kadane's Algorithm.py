@@ -49,3 +49,30 @@
     - Kadane's algorithm is a good choice when there is a need to find the maximum subarray sum in an array of integers or 
       to find the largest continuous subarray sum in an array that may contain both positive and negative integers.
 '''
+
+# initialize kadane's algorithm function that takes array as an input 
+# returns integer which is the maximum subarray sum.
+def kadanes_algorithm(array):
+    # initialize two variables to keep track of the current sum and maximum sum
+    max_so_far = array[0]
+    max_sum = array[0]
+    # starting from a second element
+    # iterate through the rest of the array
+    for i in range(1, len(array)):
+        # calculate the current sum by adding the current element to the previous current sum 
+        # if the current number (arr[i]) is greater then current sum
+        # set the current sum to current number value
+        max_so_far = max(array[i], max_so_far + array[i])
+        # compare the current sum and maximum sum
+        # if current sum is greater, update maximum sum 
+        max_sum = max(max_sum, max_so_far)
+    # return maximum sum at the end
+    return max_sum
+
+
+# initialize new array
+my_array = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+# run kadane's algorithm on new array
+maximum_sum = kadanes_algorithm(my_array)
+# print maximum sum 
+print(maximum_sum)
