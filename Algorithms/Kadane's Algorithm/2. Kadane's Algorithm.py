@@ -76,3 +76,11 @@ my_array = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
 maximum_sum = kadanes_algorithm(my_array)
 # print maximum sum 
 print(maximum_sum)
+
+
+'''
+- LEETCODE EXAMPLES:
+    - Maximum Subarray: https://leetcode.com/problems/maximum-subarray/
+    - Best Time to Buy and Sell Stock: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+    - Maximum Product Subarray: https://leetcode.com/problems/maximum-product-subarray/
+'''
