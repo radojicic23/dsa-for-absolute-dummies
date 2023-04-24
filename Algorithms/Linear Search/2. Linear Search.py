@@ -40,3 +40,32 @@
     - Overall, linear search is a good choice when the dataset is small or unsorted, 
       when the data is stored in a linked list, or when it is used as a backup algorithm.
 '''
+
+
+# linear search algorithm function 
+# it takes input array (list) in which the target value is to be searched
+# it takes target value that needs to be searched in the array (list)
+def linear_search(array, target):
+    # go through all items in the array
+    for i in range(len(array)):
+        # if current item happens to be same as target value
+        if array[i] == target:
+            # we found target 
+            # return index of target value
+            return i
+    # target not found
+    return -1
+
+# initialize new array
+my_array = [2, 0, 18, 32, 10, 1, 5]
+# initialize target value
+target_value = 10
+# run linear search algorithm 
+result = linear_search(my_array, target_value)
+
+# check to see if target is in the list
+if result != -1:
+    print(f"Target value {target_value} found at index {result}.")
+else:
+    print(f"Target value {target_value} not found.")
+    
