@@ -37,4 +37,11 @@
         - The space complexity of the sliding window algorithm also depends on the specific problem and implementation.
           In general, it's O(1). However, some problems might require additional data structures to be used within the window, 
           such as a hash table or priority queue, which would increase the space complexity.
+          
+- WHEN TO USE:
+
+    - Finding the maximum/minimum value in a set of data.
+    - Counting the number of occurrences of a specific element.
+    - Finding the longest substring without repeating characters.
+    - Finding the maximum sum of a sub-array of size "X".
 '''
