@@ -68,3 +68,10 @@ window_size = 3
 result = sliding_window(new_array, window_size)
 
 print(result) # [[1, 2, 3], [2, 3, 4], [3, 4, 5], [4, 5, 6], [5, 6, 7], [6, 7, 8], [7, 8, 9]]
+
+
+'''
+- LEETCODE EXERCISES
+    - Substrings of Size Three with Distinct Characters: https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/
+    - Max Consecutive Ones III: https://leetcode.com/problems/max-consecutive-ones-iii/
+'''
