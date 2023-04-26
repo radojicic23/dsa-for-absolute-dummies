@@ -96,3 +96,14 @@ if result == None:
     print('No such pair exist.')
 else:
     print(f'Pair found at index {result[0]} and {result[1]}.')
+
+
+'''
+- LEETCODE EXAMPLES:
+ 
+  - Valid Palindrome ==> https://leetcode.com/problems/valid-palindrome/
+  - Container With Most Water ==> https://leetcode.com/problems/container-with-most-water/
+  - 3Sum ==> https://leetcode.com/problems/3sum/
+  - Remove Nth Node From End of List ==> https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+  - Linked List Cycle II ==> https://leetcode.com/problems/linked-list-cycle-ii/
+'''
