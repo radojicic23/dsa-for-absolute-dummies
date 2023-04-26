@@ -54,3 +54,45 @@
   However, even if the data is not sorted, the Two Pointers algorithm can still be useful in certain situations, 
   such as when you need to find a subarray that adds up to a given sum or a substring that contains all the elements of a given set.
 '''
+
+# initialize two pointers algorithm function
+# that takes array as an input and 
+# target value that we want to find as the sum of the two elements in the array 
+def two_pointers(array, target):
+    # inititalize left and right pointer
+    # left pointer at the first position
+    # right pointer at the last position 
+    left = 0
+    right = len(array) - 1
+    # iterate through array while left pointer is less than right pointer 
+    while left < right:
+        # initialize the sum of elements at position left and right
+        target_sum = array[left] + array[right]
+        # if the sum is equal to target
+        if target_sum == target:
+            # return the index position of the elements
+            return [left, right]
+        # if the target sum is less than target
+        # move left pointer to the right to increase the sum
+        elif target_sum < target:
+            left += 1
+        # otherwise (if the target sum is greater than target)
+        # mode right pointer to the left to decrease the sum
+        else:
+            right -= 1
+    # If we finish iterating over the array without finding a pair of elements that sum to target
+    # return None
+    return None
+
+
+# initialize sorted array
+new_array = [1, 3, 4, 5, 10, 20]
+# initialize target value 
+target = 24
+# run two pointers 
+result = two_pointers(new_array, target)
+
+if result == None:
+    print('No such pair exist.')
+else:
+    print(f'Pair found at index {result[0]} and {result[1]}.')
