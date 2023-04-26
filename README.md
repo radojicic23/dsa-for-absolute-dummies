@@ -43,9 +43,9 @@
 
 ## Why should I care to do this? 
 - Lack of good courses and good books.
-- It's simpler for me, I like to learn about this stuff and every day working on this, I am learning too. 
+- It's simpler for me, I like to learn about this stuff, and every day working on this I am learning new stuff too. 
 - Because I need it to refresh my memory if I am stuck on something or whatever.. 
-- You can user it to refresh your memory too or to learn something new, but easy way (it's hard but it will get easier in time).
+- You can user it to refresh your memory too or to learn something new, but easy way (it's not easy, it's hard but it will get easier in time).
 
 ## But data structures and algorithms are so hard!
 - Yes. Life is hard. I have just one question on that. Do you remember that first day you enter this field of programming and IT in general? 
