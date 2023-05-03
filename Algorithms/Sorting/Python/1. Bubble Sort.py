@@ -58,4 +58,10 @@ new_array = [201, 52, 23, 3, 64, 1, 8, 121]
 sorted_array = bubble_sort(new_array)
 
 print(sorted_array) # [1, 3, 8, 23, 52, 64, 121, 201]
+
+
+'''
+- MORE EXAMPLES ON LEETCODE:
+    - Sort Colors: https://leetcode.com/problems/sort-colors/
+'''
     
