@@ -33,3 +33,29 @@
 
     - In general, it is not recommended to use bubble sort for practical applications because it's not efficient.
 '''
+
+# initialize bubble sort algorithm function 
+# it takes array as an input
+def bubble_sort(array):
+    # get size of input array
+    n = len(array)
+    # go through every element in the array
+    for i in range(n):
+        # loop through to compare each element in the array
+        for j in range(0, n - i - 1):
+            # compare two adjacent elements
+            # if you want to sort in descending order change > to <
+            if (array[j] > array[j + 1]):
+                # swap them 
+                array[j], array[j + 1] = array[j + 1], array[j]
+    # return now sorted array
+    return array
+
+
+# initialize new array
+new_array = [201, 52, 23, 3, 64, 1, 8, 121]
+# run bubble sort
+sorted_array = bubble_sort(new_array)
+
+print(sorted_array) # [1, 3, 8, 23, 52, 64, 121, 201]
+    
