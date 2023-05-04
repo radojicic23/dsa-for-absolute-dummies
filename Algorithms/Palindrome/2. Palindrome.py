@@ -23,3 +23,18 @@
 
     - The space complexity of the algorithm is also O(n), as the entire input string is stored in memory.
 '''
+
+
+
+
+
+
+
+
+'''
+- LEETCODE EXERCISES:
+
+    - Valid Palindrome: https://leetcode.com/problems/valid-palindrome/
+    - Palindrome Number: https://leetcode.com/problems/palindrome-number/
+    - Longest Palindromic Substring: https://leetcode.com/problems/longest-palindromic-substring/
+'''
