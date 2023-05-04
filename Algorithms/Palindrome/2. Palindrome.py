@@ -15,4 +15,11 @@
       For example, "racecar" is a palindrome because it reads the same way forward and backward.
 
     - There are multiple ways to check if a string is a palindrome or not.
+    
+
+- TIME AND SPACE COMPLEXITY:
+    - The time complexity of the Palindrome algorithm is O(n/2), which simplifies to O(n), where n is the length of the input string. 
+      This is because the algorithm only needs to compare the first half of the string with the second half, which takes n/2 comparisons.
+
+    - The space complexity of the algorithm is also O(n), as the entire input string is stored in memory.
 '''
