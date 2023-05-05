@@ -76,3 +76,11 @@ if (result !== -1) {
 } else {
     console.log(`Target value ${targetValue} not found.`);
 }
+
+
+/*
+- LEETCODE EXERCISES:
+ 
+    - Find Target Indices After Sorting Array: https://leetcode.com/problems/find-target-indices-after-sorting-array/
+    - Find Numbers with Even Number of Digits: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
+*/
