@@ -26,7 +26,20 @@
           On average, the linear search algorithm has a time complexity of O(n/2) or O(n).
 
     - Space Complexity:
-    
+
         - The algorithm only requires a constant amount of additional memory to store the loop index variable and the target value, 
           so the space complexity of the Linear Search algorithm is O(1).
+
+
+- WHEN TO USE LINEAR SEARCH:
+
+    - Linear search is also useful as a backup algorithm when the data is sorted, and 
+      a binary search algorithm fails to find the desired element due to data corruption or other issues.
+
+    - However, linear search is generally not a good choice for large datasets, 
+      as its time complexity of O(n) makes it inefficient compared to other searching algorithms, 
+      such as binary search, which has a time complexity of O(log n).
+
+    - Overall, linear search is a good choice when the dataset is small or unsorted, 
+      when the data is stored in a linked list, or when it is used as a backup algorithm.
 */
