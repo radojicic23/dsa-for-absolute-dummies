@@ -83,4 +83,13 @@ const newArray = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
 // run Kadane's algorithm on new array
 const maximumSum = kadanesAlgorithm(newArray);
 
-console.log(maximumSum);
+console.log(maximumSum); // the result is 6 
+
+
+/*
+- LEETCODE EXAMPLES:
+
+    - Maximum Subarray: https://leetcode.com/problems/maximum-subarray/
+    - Best Time to Buy and Sell Stock: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+    - Maximum Product Subarray: https://leetcode.com/problems/maximum-product-subarray/
+*/
