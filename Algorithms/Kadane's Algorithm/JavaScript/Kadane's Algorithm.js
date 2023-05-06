@@ -29,4 +29,14 @@
     
     - The basic idea behind the algorithm is to iterate through the array, 
       keeping track of the maximum sum seen so far and the current sum, and updating the maximum sum whenever a new maximum is found.
+
+
+- TIME AND SPACE COMPLEXITY:
+
+    - The time complexity of Kadane's algorithm is O(n), where n is the length of the input array. 
+      This is because the algorithm only loops through the array once.
+
+    - The space complexity of the algorithm is O(1), which means it uses a constant amount of extra space.
+      This is because the algorithm only uses two variables (variable for current sum and varable for maximum sum in the end).
+      Therefore, the space used by the algorithm does not depend on the size of the input array.
 */
