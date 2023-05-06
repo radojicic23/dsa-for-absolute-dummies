@@ -39,4 +39,10 @@
     - The space complexity of the algorithm is O(1), which means it uses a constant amount of extra space.
       This is because the algorithm only uses two variables (variable for current sum and varable for maximum sum in the end).
       Therefore, the space used by the algorithm does not depend on the size of the input array.
+
+
+- WHEN TO USE KADANE'S ALGORITHM:
+
+    - Kadane's algorithm is a good choice when there is a need to find the maximum subarray sum in an array of integers or 
+      to find the largest continuous subarray sum in an array that may contain both positive and negative integers.
 */
