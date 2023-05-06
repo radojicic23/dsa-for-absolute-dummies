@@ -55,3 +55,32 @@
     - Kadane's algorithm is a good choice when there is a need to find the maximum subarray sum in an array of integers or 
       to find the largest continuous subarray sum in an array that may contain both positive and negative integers.
 */
+
+
+// initialize kadane's algorithm function that takes array as an input 
+// returns integer which is the maximum subarray sum.
+const kadanesAlgorithm = (array) => {
+    // keep track of current sum
+    let maxSoFar = array[0];
+    // keep track of maximum sum
+    let maxSum = array[0];
+    // go through all numbers in the array starting at index 1 (second element)
+    for (let i = 1; i < array.length; i++) {
+        // calculate the current sum by adding the current element to the previous current sum 
+        // if the current number (arr[i]) is greater then current sum, set the current sum to current number value
+        maxSoFar = Math.max(array[i], maxSoFar + array[i]);
+        // compare the current sum and the maximum sum
+        // if the current sum is greater, update the maximum sum
+        maxSum = Math.max(maxSum, maxSoFar);
+    }
+    // return the maximum sum at the end
+    return maxSum;
+}
+
+
+// initialize new array
+const newArray = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+// run Kadane's algorithm on new array
+const maximumSum = kadanesAlgorithm(newArray);
+
+console.log(maximumSum);
