@@ -65,3 +65,11 @@ const newArray = [20, 50, 2, 321, 8, 121, 256, 133, 32]
 const maxValue = bruteForce(newArray);
 
 console.log(`Max value of this array is: ${maxValue}`); // 321
+
+
+/* 
+- More Examples on LeetCode:
+
+    - Running Sum of 1d Array ==> https://leetcode.com/problems/running-sum-of-1d-array/
+    - Count Number of Pairs With Absolute Difference K ==> https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/
+*/
