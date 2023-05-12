@@ -56,3 +56,50 @@
   However, even if the data is not sorted, the Two Pointers algorithm can still be useful in certain situations, 
   such as when you need to find a subarray that adds up to a given sum or a substring that contains all the elements of a given set.
 */
+
+
+// initialize two pointers algorithm function
+// that takes array as an input and 
+// target value that we want to find as the sum of the two elements in the array 
+const twoPointers = (array, target) => {
+    // initialize two pointers 
+    // left pointer at the first position in the array
+    let left = 0;
+    // right pointer on the last index position in the array
+    let right = array.length - 1
+    // iterate through array while left pointer is less than right pointer 
+    while (left <= right) {
+        // initialize the sum of elements at position left and right
+        let targetSum = array[left] + array[right];
+        // if the sum is equalt to target
+        if (targetSum === target) {
+            // return index position of left and right element 
+            return [left, right];
+            // if target sum is greater than input target 
+        } else if (targetSum > target) {
+            // shift right pointer to the left (to decrease value)
+            right--;
+        // othrwise, if the target sum is greater than target
+        // shift right pointer to the right (to increase value)
+        } else {
+            left++;
+        }
+    }
+    // If we finish iterating over the array without finding a pair of elements that sum to target
+    return null;
+}
+
+
+// initialize input array 
+const newArray = [1, 3, 4, 5, 10, 20];
+// initialize target sum
+const target = 13;
+// run two pointers 
+const result = twoPointers(newArray, target);
+
+// check if pair actually axist
+if (result === null) {
+    console.log('No such pair exist.');
+} else {
+    console.log(`Pair found at index ${result[0]} and ${result[1]}.`);
+}
