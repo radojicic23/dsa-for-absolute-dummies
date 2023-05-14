@@ -24,3 +24,31 @@
     - The space complexity of the algorithm is also O(N), since we need to allocate an additional vector of size N to store the prefix sum. 
       This is because the size of the prefix sum vector is equal to the size of the input array.
 */
+
+
+// prefix sum algorithm function 
+// it takes array as an input
+const prefixSum = (array) => {
+    // initialize result empty list
+    // it will store the prefix sum 
+    let result = [];
+    // this varable keeps track of the cumulative sum
+    let sumSoFar = 0;
+    // iterate through array
+    for (let i = 0; i < array.length; i++) {
+        // update cumulative sum
+        sumSoFar += array[i];
+        // add cumulative sum to the result
+        result.push(sumSoFar);
+    }
+    // return prefix sum
+    return result;
+}
+
+
+// initialize input array
+const newArray = [1, 2, 3, 4, 5, 6];
+// run prefix sum algorithm
+const answer = prefixSum(newArray);
+
+console.log(answer); // [1, 3, 6, 10, 15, 21]
