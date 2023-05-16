@@ -86,3 +86,11 @@ const windowSize = 3;
 const result = slidingWindow(newArray, windowSize);
 
 console.log(result); // 12 
+
+
+/*
+- LEETCODE EXERCISES
+
+    - Substrings of Size Three with Distinct Characters: https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/
+    - Max Consecutive Ones III: https://leetcode.com/problems/max-consecutive-ones-iii/
+*/
