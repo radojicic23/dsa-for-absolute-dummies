@@ -50,3 +50,39 @@
 
     - Finding the maximum sum of a sub-array of size "X".
 */
+
+
+// initialize sliding window function
+// it takes array as an input and k (window size) 
+const slidingWindow = (arr, k) => {
+    // maximum sum of the array (result)
+    let maxSum = -Infinity;
+    // current sum of the window
+    let currentSum = 0;
+    // create window of size k 
+    // calculate the sum of it's elements 
+    for (let i = 0; i < k; i++) {
+        currentSum += arr[i];
+    } 
+    // calculate (update) maximum sum
+    maxSum = Math.max(maxSum, currentSum);
+    
+    // slide the window by one element at the time  
+    // recalculate the maximum sum 
+    for (let i = k; i < arr.length; i++) {
+        currentSum += arr[i] - arr[i - k];
+        maxSum = Math.max(maxSum, currentSum);
+    }
+    // return maximum sum
+    return maxSum;
+} 
+
+
+// initialize input array
+const newArray = [1, 3, -1, -3, 6, 3, -2, 7, 7];
+// initialize window size 
+const windowSize = 3;
+// run sliding window algorithm
+const result = slidingWindow(newArray, windowSize);
+
+console.log(result); // 12 
