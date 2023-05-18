@@ -87,3 +87,12 @@ const str = "deified";
 // run palindrome function 
 const result = palindrome3(str);
 console.log(result);
+
+
+/*
+- LEETCODE EXERCISES:
+
+    - Valid Palindrome: https://leetcode.com/problems/valid-palindrome/
+    - Palindrome Number: https://leetcode.com/problems/palindrome-number/
+    - Longest Palindromic Substring: https://leetcode.com/problems/longest-palindromic-substring/
+*/
