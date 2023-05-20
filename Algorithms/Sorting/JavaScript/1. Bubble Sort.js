@@ -66,3 +66,10 @@ const newArray = [252, 57, 21, 2, 69, 1, 8, 133];
 const sortedArray = bubbleSort(newArray);
 
 console.log(sortedArray); // [1, 2, 8, 21, 57, 69, 133, 252]
+
+
+/*
+- MORE EXAMPLES ON LEETCODE:
+
+    - Sort Colors: https://leetcode.com/problems/sort-colors/
+*/
