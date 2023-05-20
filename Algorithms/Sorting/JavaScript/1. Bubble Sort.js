@@ -34,3 +34,35 @@
 
     - In general, it is not recommended to use bubble sort for practical applications because it's not efficient.
 */
+
+
+// initialize bubble sort algorithm function 
+// it takes array as an input
+const bubbleSort = (arr) => {
+    // initialize array size
+    const n = arr.length;
+    // go through every element in the array
+    for (let i = 0; i < n; i++) {
+        // loop through to compare each element in the array
+        for (let j = 0; j < n - i - 1; j++) {
+            // compare two adjacent elements
+            // if you want to sort in descending order change > to <
+            if (arr[j] > arr[j + 1]) {
+                // swap them
+                let tmp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = tmp;
+            }
+        }
+    }
+    // return sorted array 
+    return arr;
+}
+
+
+// initialize new array
+const newArray = [252, 57, 21, 2, 69, 1, 8, 133];
+// run bubble sort
+const sortedArray = bubbleSort(newArray);
+
+console.log(sortedArray); // [1, 2, 8, 21, 57, 69, 133, 252]
