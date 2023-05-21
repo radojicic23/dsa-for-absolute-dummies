@@ -25,4 +25,10 @@
     - The Space Complexity of the selection sort algorithm is O(1), 
       which means that it uses a constant amount of additional memory regardless of the size of the input array. 
       This is because the algorithm sorts the elements in-place, without requiring any additional data structures such as arrays, lists, or trees.
+
+
+- WHEN TO USE SELECTION SORT:
+
+    - In general, selection sort is a good choice when the dataset is small or nearly sorted, when memory space is limited, 
+      or when minimizing the number of swaps is important.
 */
