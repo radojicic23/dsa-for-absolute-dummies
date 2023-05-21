@@ -34,10 +34,42 @@
 */
 
 
+const selectionSort = (array) => {
+    // initialize array size 
+    const n = array.length;
+    for (let i = 0; i < n; i++) {
+        // initialize minimum index to 'i'
+        // This is because we assume that 
+        // the first unsorted element is the minimum element
+        let minIndex = i;
+        //  loops through all the remaining unsorted elements from 'i + 1' 
+        for (let j = i + 1; j < n; j++) {
+            // compare current element with the assumed minimum element
+            // if it's smaller, we found new minimum element
+            // update midIndex
+            if (array[j] < array[minIndex]) {
+                minIndex = j;
+            }
+        }
+        // inner loop is finished
+        // minimum element is at index 'minIndex'
+        // swap with the first element in array
+        // now the minimum element is at correct position (at beginning)
+        let tmp = array[minIndex];
+        array[minIndex] = array[i];
+        array[i] = tmp;
+    }
+    // return sorted array
+    return array
+}
 
 
+//initialie new array
+const newArray = [20, 7, 3, 43, 22, 16];
+// run selection sort
+const sortedArray = selectionSort(newArray);
 
-
+console.log(sortedArray); // [3, 7, 16, 20, 22, 43]
 
 
 
