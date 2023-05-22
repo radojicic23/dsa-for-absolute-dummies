@@ -34,8 +34,36 @@
       or when minimizing the number of swaps is important.
 '''
 
+# initialize selection sort function 
+# it takes array as an input
+def selection_sort(array):
+    for i in range(len(array)):
+        # initialize minimum index to 'i'
+        # This is because we assume that 
+        # the first unsorted element is the minimum element
+        min_index = i
+        # loops through all the remaining unsorted elements from 'i + 1'
+        for j in range(i + 1, len(array)):
+            # compare current element with the assumed minimum element
+            # if it's smaller, we found new minimum element
+            # update midIndex
+            if array[j] < array[min_index]:
+                min_index = j
+        # inner loop is finished
+        # minimum element is at index 'minIndex'
+        # swap with the first element in array
+        # now the minimum element is at correct position (at beginning)
+        array[i], array[min_index] = array[min_index], array[i]
+    # return sorted array 
+    return array
 
 
+# initialize input array
+new_array = [20, 7, 3, 43, 22, 16, 1, 24]
+# run selection sort
+sorted_array = selection_sort(new_array)
+
+print(sorted_array)
 
 
 
