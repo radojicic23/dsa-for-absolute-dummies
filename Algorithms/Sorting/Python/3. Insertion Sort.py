@@ -35,3 +35,24 @@
   - Insertion sort is a good choice when sorting small or partially sorted datasets, 
     and when the efficiency of the algorithm is not the primary concern.
 '''
+
+
+def insertion_sort(arr):
+    for i in range(len(arr)):
+        key = arr[i]
+        j = i - 1
+        # Move elements of arr[0..i-1], that are greater than key,
+        # to one position ahead of their current position
+        while j >= 0 and arr[j] > key:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+    return arr
+
+
+# initialize input array
+new_array = [12, 52, 121, 3, 64, 1, 8, 23, 44]
+# run insertion sort
+result = insertion_sort(new_array)
+
+print(result)
