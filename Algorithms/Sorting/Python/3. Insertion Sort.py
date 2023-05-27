@@ -28,4 +28,10 @@
 
   - The space complexity of the insertion sort algorithm is O(1), meaning it requires a constant amount of extra space. 
     This is because the algorithm sorts the input array in place, without requiring any additional data structures or temporary storage.
+    
+    
+- WHEN TO USE INSERTION SORT:
+  - Insertion sort is a good choice when the dataset is small. 
+  - Insertion sort is a good choice when sorting small or partially sorted datasets, 
+    and when the efficiency of the algorithm is not the primary concern.
 '''
