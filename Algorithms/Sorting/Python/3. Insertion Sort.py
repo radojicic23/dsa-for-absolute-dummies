@@ -38,14 +38,25 @@
 
 
 def insertion_sort(arr):
-    for i in range(len(arr)):
+    # Loop from the second element
+    for i in range(1, len(arr)):
+        # This is the element we want to position in its correct place
         key = arr[i]
+        # Initialize the variable that will be used to
+        # find the correct position of the element referenced
+        # by `key`
         j = i - 1
         # Move elements of arr[0..i-1], that are greater than key,
         # to one position ahead of their current position
+        #  # Compare key with each element on the left, until an element smaller than it is found
         while j >= 0 and arr[j] > key:
+            # Shift the value one position to the left
+            # and reposition j to point to the next element
+            # (from right to left)
             arr[j + 1] = arr[j]
             j -= 1
+         # When you finish shifting the elements, you can position
+        # `key` in its correct location
         arr[j + 1] = key
     return arr
 
