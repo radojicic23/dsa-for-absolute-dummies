@@ -36,3 +36,39 @@
     - Insertion sort is a good choice when sorting small or partially sorted datasets, 
       and when the efficiency of the algorithm is not the primary concern.
 */
+
+
+const insertionSort = (arr) => {
+    // loop from the second element
+    for (let i = 1; i < arr.length; i++) {
+        // this is the element we want to position in its correct place
+        key = arr[i];
+        // initialize the variable that will be used to
+        // find the correct position of the element referenced
+        // by `key`
+        j = i - 1;
+        // move elements of arr[0..i-1], that are greater than key,
+        // to one position ahead of their current position
+        // compare key with each element on the left, until an element smaller than it is found
+        while (j >= 0 && arr[j] > key) {
+            // Shift the value one position to the left
+            // and reposition j to point to the next element
+            // (from right to left)
+            arr[j + 1] = arr[j];
+            j--;
+        }
+        // when you finish shifting the elements, you can position
+        // `key` in its correct location
+        arr[j + 1] = key;
+    }
+    // return sorted array
+    return arr;
+}
+
+
+// initialize input array
+const newArray = [32, 12, 52, 121, 3, 14, 64, 1, 8, 23, 44]
+// run insertion sort algorithm 
+const sortedArray = insertionSort(newArray);
+
+console.log(sortedArray);
