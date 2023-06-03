@@ -80,3 +80,62 @@
         - Time Complexity: O(n) (where n is the length of the array)
         - Space Complexity: O(1)
     */
+
+
+// One Dimensional Array
+const array1D = [1, 2, 3, 4];
+const array1d = new Array(1, 2, 3);
+
+// Two Dimensional Array
+const array2D = [[1, 2, 3], [4, 5, 6]]
+const array2d = new Array([1, 2, 3], [4, 5, 6])
+
+// Two Dimensional (n x n) Array
+const array2DNxN = [[1, 2, 3],
+                    [4, 5, 6],
+                    [7, 8, 9]]
+
+
+// initialize new array
+const newArray = new Array();
+
+// add element at the end of the array
+newArray.push(1) // [1]
+newArray.push(2) // [1, 2]
+newArray.push(3) // [1, 2, 3]
+newArray.push(4) // [1, 2, 3, 4]
+newArray.push(5) // [1, 2, 3, 4, 5]
+newArray.push(6) // [1, 2, 3, 4, 5, 6]
+
+// remove element from top of the array
+newArray.pop() // we deleted 6 [1, 2, 3, 4, 5]
+newArray.pop() // we deleted 5 [1, 2, 3, 4]
+
+// adds one or more elements to the beginning
+newArray.unshift(0) // [0, 1, 2, 3, 4]
+
+// remove one or more elements from the beginning
+newArray.shift() // [1, 2, 3, 4]
+
+// returns a shallow copy of a portion of an array (in this case from 0 index to 2. index but 2. index not included)
+const sliceArray = newArray.slice(0, 2) // [1, 2]
+
+// changes the contents of an array by removing, replacing, or adding elements at a specified position
+newArray.splice(2, 3, 'a', 'b') // [1, 2, 'a', 'b']
+
+// returns a new array that combines two or more arrays
+let arr = [5, 6, 7]
+const newArray1 = newArray.concat(arr) // [1, 2, 'a', 'b', 5, 6, 7]
+
+// joins all elements of an array into a string
+const string = newArray.join("") // 12ab
+
+// returns the first index at which a given element can be found in an array, or -1 if it is not present
+const indexOfElement = newArray.indexOf(1) // 0
+
+// determines whether an array includes a certain element and returns a boolean
+console.log(newArray.includes(2)); // true
+
+// number of elements in array
+console.log(newArray.length) // 4
+
