@@ -23,4 +23,18 @@
       
     - Arrays can be used to store and manipulate different types of data, such as numbers, characters, strings, and objects. 
       They are commonly used in programming for a variety of tasks, such as sorting, searching, and processing large amounts of data.
+
+
+- MOST COMMONLY USED BUILT-IN FUNCTIONS:
+
+    - Array.push(): Adds one or more elements to the end of an array and returns the new length of the array.
+    - Array.pop(): Removes the last element from an array and returns that element.
+    - Array.shift(): Removes the first element from an array and returns that element.
+    - Array.unshift(): Adds one or more elements to the beginning of an array and returns the new length of the array.
+    - Array.slice(): Returns a shallow copy of a portion of an array into a new array.
+    - Array.splice(): Changes the contents of an array by removing, replacing, or adding elements at a specified position.
+    - Array.concat(): Returns a new array that combines two or more arrays.
+    - Array.join(): Joins all elements of an array into a string.
+    - Array.indexOf(): Returns the first index at which a given element can be found in an array, or -1 if it is not present.
+    - Array.includes(): Determines whether an array includes a certain element and returns a boolean.
 */
