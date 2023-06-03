@@ -37,4 +37,46 @@
     - Array.join(): Joins all elements of an array into a string.
     - Array.indexOf(): Returns the first index at which a given element can be found in an array, or -1 if it is not present.
     - Array.includes(): Determines whether an array includes a certain element and returns a boolean.
-*/
+
+
+- TIME AND SPACE COMPLEXITY:
+    Array.push():
+        - Time Complexity: O(1)
+        - Space Complexity: O(1)
+
+    Array.pop():
+        - Time Complexity: O(1)
+        - Space Complexity: O(1)
+
+    Array.shift():
+        - Time Complexity: O(n)
+        - Space Complexity: O(1)
+    
+    Array.unshift():
+        - Time Complexity: O(n)
+        - Space Complexity: O(n)
+        
+    Array.slice():
+        - Time Complexity: O(k) (where k is the length of the extracted portion)
+        - Space Complexity: O(k)
+    
+    Array.splice():
+        - Time Complexity: O(n) (where n is the length of the array)
+        - Space Complexity: O(n)
+        
+    Array.concat():
+        - Time Complexity: O(m + n) (where m and n are the lengths of the two arrays being concatenated)
+        - Space Complexity: O(m + n)
+        
+    Array.join():
+        - Time Complexity: O(n) (where n is the length of the array)
+        - Space Complexity: O(n)
+
+    Array.indexOf():
+        - Time Complexity: O(n) (where n is the length of the array)
+        - Space Complexity: O(1)
+        
+    Array.includes():
+        - Time Complexity: O(n) (where n is the length of the array)
+        - Space Complexity: O(1)
+    */
