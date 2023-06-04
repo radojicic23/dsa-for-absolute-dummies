@@ -21,3 +21,19 @@
 
 
 '''
+
+
+
+
+
+
+
+'''
+- More Examples on LeetCode:
+
+    - Two Sum ==> https://leetcode.com/problems/two-sum/
+    - Contains Duplicate ==> https://leetcode.com/problems/contains-duplicate/
+    - Contains Duplicates II ==> https://leetcode.com/problems/contains-duplicate-ii/
+    - Longest Substring Without Repeating Characters ==> https://leetcode.com/problems/longest-substring-without-repeating-characters/
+    - Design HashMap ==> https://leetcode.com/problems/design-hashmap/
+'''
