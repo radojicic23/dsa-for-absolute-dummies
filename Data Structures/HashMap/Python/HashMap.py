@@ -89,7 +89,24 @@ print(my_dict.get("orange"))  # Output: None
 # Iterating over key-value pairs
 for key, value in my_dict.items():
     print(key, value)
+    
+    
+print(len(my_dict))  # Output: 3
 
+print(my_dict.keys())  # Output: dict_keys(['apple', 'banana', 'orange'])
+
+print(my_dict.values())  # Output: dict_values([3, 5, 2])
+
+print(my_dict.items())  # Output: dict_items([('apple', 3), ('banana', 5), ('orange', 2)])
+
+my_dict.setdefault("grape", 7)
+print(my_dict["grape"])  # Output: 7
+
+value = my_dict.pop("banana")
+print(value)  # Output: 5
+
+my_dict.clear()
+print(my_dict)  # Output: {}
 
 
 '''
