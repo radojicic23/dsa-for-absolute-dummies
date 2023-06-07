@@ -65,3 +65,74 @@ SOME COMMON STRING OPERATIONS IN JAVASCRIPT:
       It needs to iterate over each character of the string to identify the delimiter and split the string accordingly. 
       The space complexity is O(m), where m is the number of substrings produced. It requires creating an array to store the substrings.
 */
+
+// initialize string
+let str = "Hello";
+// accesing characters
+console.log(str[0]);  // Output: "H"
+console.log(str[1]);  // Output: "e"
+
+
+// You can concatenate (join) two or more strings together using the + operator 
+let str1 = "Hello";
+let str2 = "world!";
+let result = str1 + " " + str2;    // Using the + operator
+console.log(result);  // Output: "Hello world!"
+
+
+// You can concatenate (join) two or more strings together using the concat() method
+let str3 = "Welcome";
+let str4 = "to JavaScript!";
+let result2 = str3.concat(" ", str4);  // Using the concat() method
+console.log(result2);  // Output: "Welcome to JavaScript!"
+
+
+//  You can find the length of a string (number of characters) using the length property.
+let str5 = "Hello";
+console.log(str5.length);   // Output: 5
+
+
+// change all characters into uppercase
+let str6 = "Hello";
+console.log(str6.toUpperCase());   // Output: "HELLO"
+
+
+// change all characters into lowercase
+let str7 = "Hello";
+console.log(str7.toUpperCase());   // Output: "hello"
+
+
+// slice
+let str8 = "Hello, world!";
+let sliced = str8.slice(7, 12);
+console.log(sliced);   // Output: "world"
+
+
+// substring
+let str9 = "Hello, world!";
+let substring = str9.substring(7, 12);
+console.log(substring);   // Output: "world"
+
+
+// substr
+let str10 = "Hello, world!";
+let substr = str10.substr(7, 5);
+console.log(substr);   // Output: "world"
+
+
+// indexOf
+let str11 = "Hello, world!";
+let index = str11.indexOf("world");
+console.log(index);   // Output: 7
+
+
+// replace
+let str12 = "Hello, world!";
+let replaced = str12.replace("world", "JavaScript");
+console.log(replaced);   // Output: "Hello, JavaScript!"
+
+
+// split
+let str13 = "Hello, world!";
+let splitted = str13.split(", ");
+console.log(splitted);   // Output: ["Hello", "world!"]
