@@ -66,3 +66,40 @@
 
     - iter(set): Returns an iterator over the set, allowing you to iterate through its elements.
 '''
+
+
+# Creating a set
+my_set = set()
+
+# Adding elements to the set
+my_set.add(1)
+my_set.add(2)
+my_set.add(3)
+my_set.add(1)  # Ignored, as 1 is already present
+
+print(my_set)  # Output: {1, 2, 3}
+
+# Removing an element from the set
+my_set.remove(2)
+
+print(my_set)  # Output: {1, 3}
+
+# Checking membership
+print(1 in my_set)  # Output: True
+print(2 in my_set)  # Output: False
+
+# Set operations
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+
+union_set = set1.union(set2)
+print(union_set)  # Output: {1, 2, 3, 4}
+
+intersection_set = set1.intersection(set2)
+print(intersection_set)  # Output: {2, 3}
+
+difference_set = set1.difference(set2)
+print(difference_set)  # Output: {1}
+
+symmetric_difference_set = set1.symmetric_difference(set2)
+print(symmetric_difference_set)  # Output: {1, 4}
