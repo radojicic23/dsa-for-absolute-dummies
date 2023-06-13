@@ -34,4 +34,35 @@
     
     - Set operations: Sets support various set operations such as union, intersection, difference, and symmetric difference. 
       These operations can be performed using built-in methods or operators.
+      
+      
+- HERE ARE SOME OF THE MOST COMMONLY USED BUILT-IN FUNCTIONS:
+
+    - add(element): Adds an element to the set.
+
+    - remove(element): Removes an element from the set. Raises a KeyError if the element is not found.
+
+    - discard(element): Removes an element from the set if it is present. Does not raise an error if the element is not found.
+
+    - clear(): Removes all elements from the set, making it an empty set.
+
+    - copy(): Returns a shallow copy of the set.
+
+    - union(*sets): Returns a new set that is the union of the current set and the provided sets.
+
+    - intersection(*sets): Returns a new set that is the intersection of the current set and the provided sets.
+
+    - difference(*sets): Returns a new set that contains elements present in the current set but not in the provided sets.
+
+    - symmetric_difference(other_set): Returns a new set that contains elements present in either the current set or the provided set, but not in both.
+
+    - issubset(other_set): Checks if the current set is a subset of the provided set and returns a boolean value.
+
+    - issuperset(other_set): Checks if the current set is a superset of the provided set and returns a boolean value.
+
+    - isdisjoint(other_set): Checks if the current set and the provided set have no common elements and returns a boolean value.
+
+    - len(set): Returns the number of elements in the set.
+
+    - iter(set): Returns an iterator over the set, allowing you to iterate through its elements.
 '''
