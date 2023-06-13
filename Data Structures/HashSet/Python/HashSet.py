@@ -103,3 +103,15 @@ print(difference_set)  # Output: {1}
 
 symmetric_difference_set = set1.symmetric_difference(set2)
 print(symmetric_difference_set)  # Output: {1, 4}
+
+
+'''
+- LEETCODE EXERCISES:
+
+    - Two Sum ==> https://leetcode.com/problems/two-sum/
+    - Intersection of Two Arrays ==> https://leetcode.com/problems/intersection-of-two-arrays/
+    - Happy Number ==> https://leetcode.com/problems/happy-number/
+    - Contains Duplicate ==> https://leetcode.com/problems/contains-duplicate/
+    - Longest Consecutive Sequence ==> https://leetcode.com/problems/longest-consecutive-sequence/
+'''
+
