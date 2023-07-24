@@ -53,3 +53,13 @@
       Memory Overhead: HashSets generally have a slightly higher memory overhead compared to simple arrays or 
       lists due to the need for maintaining the underlying hash table and managing collision resolution.
 */
+
+/*
+- LEETCODE EXERCISES:
+    - Two Sum (Easy): https://leetcode.com/problems/two-sum/
+    - Contains Duplicate (Easy): https://leetcode.com/problems/contains-duplicate/
+    - Happy Number (Easy): https://leetcode.com/problems/happy-number/
+    - Isomorphic Strings (Easy): https://leetcode.com/problems/isomorphic-strings/
+    - Valid Sudoku (Medium): https://leetcode.com/problems/valid-sudoku/
+    - Longest Consecutive Sequence (Hard): https://leetcode.com/problems/longest-consecutive-sequence/
+*/
